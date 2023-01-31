@@ -6,8 +6,8 @@
   }
   
   .home,
-  .services,
-  .products,
+  .about,
+  .members,
   .apply-now {
     display: flex;
     height: 90vh;
