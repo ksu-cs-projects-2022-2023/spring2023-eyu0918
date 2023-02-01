@@ -5,7 +5,7 @@ import "./App.css";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Members from "./components/pages/Members";
-import ApplyNow from "./components/pages/ApplyNow";
+import ApplyToday from "./components/pages/ApplyToday";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/members" element={<Members />} />
-          <Route path="/apply-now" element={<ApplyNow />} />
+          <Route path="/apply-today" element={<ApplyToday />} />
         </Routes>
       </Router>
     </>

@@ -28,17 +28,44 @@ function Footer() {
           </div>
           <div class="footer-link-items">
             <h2>Documents</h2>
-            <Link to="/">Constitution</Link>
-            <Link to="/">By-laws</Link>
-            <Link to="/">Application</Link>
+            <Link
+              to="https://www.smithscholarshiphouse.org/_files/ugd/4ecb5a_146a7d282a004de6bad2c7e54e806865.pdf"
+              target="_blank"
+            >
+              Constitution
+            </Link>
+            <Link
+              to="https://www.smithscholarshiphouse.org/_files/ugd/4ecb5a_282ee7f46ae04b3b9541aec5142252eb.pdf"
+              target="_blank"
+            >
+              By-laws
+            </Link>
+            <Link
+              to="https://www.k-state.edu/smithhouse/docs/Smith%20app.pdf"
+              target="_blank"
+            >
+              Application
+            </Link>
             <Link to="/">Brochure</Link>
           </div>
           <div class="footer-link-items">
             <h2>Stay Connected</h2>
             <Link to="/">Contact Us</Link>
-            <Link to="/">Official K-State Page</Link>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Location</Link>
+            <Link to="https://www.k-state.edu/smithhouse/" target="_blank">
+              Official K-State Page
+            </Link>
+            <Link
+              to="https://www.mapquest.com/us/kansas/smith-scholarship-house-289277455"
+              target="_blank"
+            >
+              Location
+            </Link>
+            <Link
+              to="https://housing.k-state.edu/living-options/smurthwaite/"
+              target="_blank"
+            >
+              Smurthwaite
+            </Link>
           </div>
         </div>
       </div>
@@ -56,7 +83,7 @@ function Footer() {
           <div className="social-icons">
             <Link
               className="social-icon-link facebook"
-              to="/"
+              to="https://www.facebook.com/smithhousekstate"
               target="_blank"
               aria-label="Facebook"
             >
@@ -64,7 +91,7 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link instagram"
-              to="/"
+              to="https://www.instagram.com/ksusmithhouse/"
               target="_blank"
               aria-label="Instagram"
             >
@@ -72,7 +99,7 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link youtube"
-              to="/"
+              to="https://www.youtube.com/@BenBenSmith"
               target="_blank"
               aria-label="YouTube"
             >
@@ -80,7 +107,7 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link twitter"
-              to="/"
+              to="https://twitter.com/ksusmithhouse"
               target="_blank"
               aria-label="Twitter"
             >
@@ -88,7 +115,7 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link linkedin"
-              to="/"
+              to="https://www.linkedin.com/in/eric-yu-346762196/"
               target="_blank"
               aria-label="LinkedIn"
             >

@@ -55,16 +55,16 @@ function Navbar() {
               </Link>
               <li className="nav-item">
                 <Link
-                  to="/apply-now"
+                  to="/apply-today"
                   className="nav-links-mobile"
                   onClick={closeMobileMenu}
                 >
-                  Apply Now
+                  Apply Today
                 </Link>
               </li>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline"> APPLY NOW</Button>}
+          {button && <Button buttonStyle="btn--outline"> APPLY TODAY</Button>}
         </div>
       </nav>
     </>

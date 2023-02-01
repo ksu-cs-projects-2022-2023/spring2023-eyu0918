@@ -8,7 +8,7 @@
   .home,
   .about,
   .members,
-  .apply-now {
+  .apply-today {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -26,15 +26,16 @@
   }
   
   .members {
-    background-image: url('/public/images/members.jpg');
-    background-position: center;
+    background-image: url('/public/images/members.jpeg');
+    background-position-x: 50%;
+    background-position-y: 25%;
     background-size: fill;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
   }
   
-  .apply-now {
+  .apply-today {
     background-image: url('/public/images/apply-now.jpg');
     background-position: center;
     background-size: cover;

@@ -12,20 +12,30 @@ function Cards() {
             <CardItem
               src="images/about.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="About"
+              label="ABOUT"
               path="/about"
             />
+          </ul>
+          <ul className="cards__items">
             <CardItem
-              src="images/members.jpg"
+              src="images/members.jpeg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="Members"
+              label="MEMBERS"
+              path="/Members"
+            />
+          </ul>
+          <ul className="cards__items">
+            <CardItem
+              src="images/contact-us.JPG"
+              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              label="CONTACT US"
               path="/Members"
             />
             <CardItem
-              src="images/images-home.jpg"
+              src="images/2.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
-              label="Apply Today"
-              path="/apply-now"
+              label="SCHEDULE A VISIT"
+              path="/apply-today"
             />
           </ul>
         </div>
