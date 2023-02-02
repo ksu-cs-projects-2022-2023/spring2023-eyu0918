@@ -8,6 +8,10 @@
   .home,
   .about,
   .members,
+  .values,
+  .operations,
+  .activities,
+  .costs,
   .apply-today {
     display: flex;
     height: 90vh;
@@ -29,7 +33,47 @@
     background-image: url('/public/images/members.jpeg');
     background-position-x: 50%;
     background-position-y: 25%;
-    background-size: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .values {
+    background-image: url('/public/images/values.jpg');
+    background-position-x: 50%;
+    background-position-y: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .operations {
+    background-image: url('/public/images/operations.jpg');
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .activities {
+    background-image: url('/public/images/activities.JPG');
+    background-position-x: 50%;
+    background-position-y: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .costs {
+    background-image: url('/public/images/costs.JPG');
+    background-position-x: 50%;
+    background-position-y: 25%;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;

@@ -22,13 +22,13 @@ function About() {
               src="images/values.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="VALUES"
-              path="/about"
+              path="/values"
             />
             <CardItem
               src="images/operations.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="OPERATIONS"
-              path="/about"
+              path="/operations"
             />
           </ul>
           <ul className="cards__items">
@@ -36,13 +36,13 @@ function About() {
               src="images/activities.JPG"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="ACTIVITIES"
-              path="/about"
+              path="/activities"
             />
             <CardItem
               src="images/costs.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="COSTS"
-              path="/about"
+              path="/costs"
             />
           </ul>
         </div>
