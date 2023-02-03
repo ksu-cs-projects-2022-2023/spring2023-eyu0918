@@ -28,6 +28,24 @@
     color: #fff;
     font-size: 100px;
   }
+
+  .about-info {
+    padding-top: 70px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 50px;
+    line-height: 150%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .about-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+  }
   
   .members {
     background-image: url('/public/images/members.jpeg');
@@ -47,6 +65,31 @@
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
+  }
+
+  .values-header {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .values-info {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10px;
+    line-height: 150%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .values-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    width: 50%;
+    height: 50%;
   }
 
   .operations {

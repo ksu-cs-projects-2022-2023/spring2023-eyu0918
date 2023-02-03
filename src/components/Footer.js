@@ -21,10 +21,10 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/sign-up">Values</Link>
-            <Link to="/">Operations</Link>
-            <Link to="/">Activities</Link>
-            <Link to="/">Costs</Link>
+            <Link to="/values">Values</Link>
+            <Link to="/operations">Operations</Link>
+            <Link to="/activities">Activities</Link>
+            <Link to="/costs">Costs</Link>
           </div>
           <div class="footer-link-items">
             <h2>Documents</h2>
