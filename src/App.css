@@ -4,6 +4,13 @@
     padding: 0;
     font-family: 'PT Sans', sans-serif;
   }
+
+  hr {
+    height: 5px;
+    background-color: purple;
+    width: 80%;
+    margin: auto;
+  }
   
   .home,
   .about,
@@ -13,6 +20,7 @@
   .activities,
   .costs,
   .contact-us,
+  .schedule-a-visit,
   .apply-today {
     display: flex;
     height: 90vh;
@@ -58,13 +66,19 @@
     font-size: 100px;
   }
 
-  .values-header {
+  .values-header,
+  .operations-header,
+  .activities-header,
+  .costs-header {
     padding-top: 50px;
     padding-bottom: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
-  .values-info {
+  .values-info,
+  .operations-info,
+  .activities-info,
+  .costs-info {
     padding-left: 15%;
     padding-right: 15%;
     padding-bottom: 10px;
@@ -73,7 +87,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
-  .values-image {
+  .values-image{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -111,6 +125,16 @@
     background-repeat: no-repeat;
     color: #fff;
     font-size: 100px;
+  }
+
+  .costs-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    width: 20%;
+    height: 20%;
   }
     
   .members {
@@ -224,6 +248,15 @@
     transition: .5s ease;
     opacity: 1;
     backface-visibility: hidden;
+  }
+
+  .schedule-a-visit {
+    background-image: url('/public/images/1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
   }
 
   .apply-today {

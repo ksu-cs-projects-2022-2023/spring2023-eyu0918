@@ -12,6 +12,7 @@ import Activities from "./components/pages/Activities";
 import Costs from "./components/pages/Costs";
 import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./components/pages/ContactUs";
+import ScheduleAVisit from "./components/pages/ScheduleAVisit";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/activities" element={<Activities />} />
           <Route path="/costs" element={<Costs />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/schedule-a-visit" element={<ScheduleAVisit />} />
         </Routes>
       </Router>
     </>

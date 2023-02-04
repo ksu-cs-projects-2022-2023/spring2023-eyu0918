@@ -41,9 +41,18 @@ function Values() {
       </h2>
 
       <img className="values-image" src="images/values-1.jpg" alt="Values 1" />
+
+      <hr />
+
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
+            <CardItem
+              src="images/about.jpg"
+              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              label="ABOUT"
+              path="/about"
+            />
             <CardItem
               src="images/operations.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
