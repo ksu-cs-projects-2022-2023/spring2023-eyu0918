@@ -14,26 +14,58 @@ function ContactUs() {
         Feel free to contact us using any of the information given below.
       </h2>
       <p className="contact-us-info2">
-        House Phone: (785)-537-0042 <br />
-        House Email Address: SmithScholarshipHouseKSU@gmail.com <br />
-        House Address: 331 N M.L.K. Jr. Dr, Manhattan, KS 66502
+        <b>House Phone:</b> (785)-537-0042 <br />
+        <b>House Email Address:</b> SmithScholarshipHouseKSU@gmail.com <br />
+        <b>House Address:</b> 331 N M.L.K. Jr. Dr, Manhattan, KS 66502
       </p>
+      <h4 className="contact-us-info3">
+        *Hover Over Each Image Below to Display Additional Information*
+      </h4>
       <div className="contact-us-image-wrapper">
-        <img
-          src="images/2022-2023/BRIAN GARCIA SANDOVAL.jpg"
-          alt="Snow"
-          className="contact-us-image"
-        />
-        <img
-          src="images/2022-2023/JOSHUA PETERSON.jpg"
-          alt="Forest"
-          className="contact-us-image"
-        />
-        <img
-          src="images/2022-2023/ANNELIESE SNYDER.jpg"
-          alt="Mountains"
-          className="contact-us-image"
-        />
+        <div className="contact-us-container">
+          <img
+            src="images/2022-2023/BRIAN GARCIA SANDOVAL.jpg"
+            alt="Brian Garcia"
+            className="contact-us-image"
+          />
+          <div className="centered-text">
+            <p>
+              Brian Garcia <br />
+              Junior <br />
+              Recruiting Chair <br />
+              brigar20@ksu.edu <br />
+            </p>
+          </div>
+        </div>
+        <div className="contact-us-container">
+          <img
+            src="images/2022-2023/JOSHUA PETERSON.jpg"
+            alt="Joshua Peterson"
+            className="contact-us-image"
+          />
+          <div className="centered-text">
+            <p>
+              Joshua Peterson <br />
+              Senior <br />
+              President <br />
+              josh811@ksu.edu <br />
+            </p>
+          </div>
+        </div>
+        <div className="contact-us-container">
+          <img
+            src="images/2022-2023/ANNELIESE SNYDER.jpg"
+            alt="Anneliese Snyder"
+            className="contact-us-image"
+          />
+          <div className="centered-text">
+            <p>
+              Anneliese Snyder <br />
+              Executive Director <br />
+              ???@ksu.edu <br />
+            </p>
+          </div>
+        </div>
       </div>
       <Footer />
     </>
