@@ -50,7 +50,7 @@ function Footer() {
           </div>
           <div class="footer-link-items">
             <h2>Stay Connected</h2>
-            <Link to="/">Contact Us</Link>
+            <Link to="/contact-us">Contact Us</Link>
             <Link to="https://www.k-state.edu/smithhouse/" target="_blank">
               Official K-State Page
             </Link>
@@ -82,14 +82,6 @@ function Footer() {
           </small>
           <div className="social-icons">
             <Link
-              className="social-icon-link facebook"
-              to="https://www.facebook.com/smithhousekstate"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <i className="fab fa-facebook-f" />
-            </Link>
-            <Link
               className="social-icon-link instagram"
               to="https://www.instagram.com/ksusmithhouse/"
               target="_blank"
@@ -97,6 +89,15 @@ function Footer() {
             >
               <i className="fab fa-instagram" />
             </Link>
+            <Link
+              className="social-icon-link facebook"
+              to="https://www.facebook.com/smithhousekstate"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i className="fab fa-facebook-f" />
+            </Link>
+
             <Link
               className="social-icon-link youtube"
               to="https://www.youtube.com/@BenBenSmith"

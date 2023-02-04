@@ -12,6 +12,7 @@
   .operations,
   .activities,
   .costs,
+  .contact-us,
   .apply-today {
     display: flex;
     height: 90vh;
@@ -19,7 +20,7 @@
     justify-content: center;
     font-size: 3rem;
   }
-  
+
   .about {
     background-image: url('/public/images/about.jpg');
     background-position: center;
@@ -45,16 +46,6 @@
     margin-right: auto;
     width: 20%;
     height: 20%;
-  }
-  
-  .members {
-    background-image: url('/public/images/members.jpeg');
-    background-position-x: 50%;
-    background-position-y: 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
   }
 
   .values {
@@ -121,7 +112,79 @@
     color: #fff;
     font-size: 100px;
   }
-  
+
+    
+  .members {
+    background-image: url('/public/images/members.jpeg');
+    background-position-x: 50%;
+    background-position-y: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+    
+  .contact-us {
+    background-image: url('/public/images/contact-us.JPG');
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+
+  .contact-us-info {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 150%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .contact-us-info2 {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 150%;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .contact-us-image-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;;
+    gap: 50px;
+    position: relative;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .contact-us-image-wrapper {
+      flex-direction: column;
+    }
+  }
+
+ .contact-us-image {
+    border: #fff;
+    border-radius: 20px;
+    width: 20%;
+    height: 20%;
+    transition: .5s ease;
+    opacity: 1;
+    backface-visibility: hidden;
+  }
+
   .apply-today {
     background-image: url('/public/images/apply-now.jpg');
     background-position: center;

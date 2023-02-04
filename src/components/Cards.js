@@ -29,13 +29,13 @@ function Cards() {
               src="images/contact-us.JPG"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="CONTACT US"
-              path="/Members"
+              path="/contact-us"
             />
             <CardItem
-              src="images/2.jpg"
+              src="images/1.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="SCHEDULE A VISIT"
-              path="/apply-today"
+              path="/"
             />
           </ul>
         </div>

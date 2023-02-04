@@ -1,6 +1,13 @@
 import React from "react";
 import "../../App.css";
 
-export default function Members() {
-  return <h1 className="members">MEMBERS</h1>;
+function Members() {
+  return (
+    <>
+      <h1 className="members">MEMBERS</h1>
+      <img src="images/2022-2023/PEDRO GARCIA.jpg" alt="Pedro Garcia" />
+    </>
+  );
 }
+
+export default Members;

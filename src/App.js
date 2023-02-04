@@ -11,6 +11,7 @@ import Operations from "./components/pages/Operations";
 import Activities from "./components/pages/Activities";
 import Costs from "./components/pages/Costs";
 import ScrollToTop from "./components/ScrollToTop";
+import ContactUs from "./components/pages/ContactUs";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/operations" element={<Operations />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/costs" element={<Costs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
       </Router>
     </>
