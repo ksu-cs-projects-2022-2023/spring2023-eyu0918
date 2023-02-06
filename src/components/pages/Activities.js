@@ -28,6 +28,11 @@ function Activities() {
         the house, and the men also have a chance to attend Christmas Tea in the
         fall and the Smith-Smurthwaite Formal in the spring.
       </h2>
+      <img
+        className="activities-image"
+        src="images/dance.jpg"
+        alt="Ballroom Dancing"
+      />
 
       <h1 className="activities-header">Intramural</h1>
       <h2 className="activities-info">
@@ -36,7 +41,7 @@ function Activities() {
         football, basketball, volleyball, and softball, as well as many other
         individual events. Smith House has taken the All-University Independent
         Intramural Title for most cumulative points in 1987-88, 1988-89,
-        1992-93, 1993-94, 2006-07, and 2011-12.Smith men regularly head out to
+        1992-93, 1993-94, 2006-07, and 2011-12. Smith men regularly head out to
         the Recreation Complex, located three blocks north of campus, to indulge
         in basketball, racquetball, or even swimming at the Natatorium. For
         stress relief, many Smith Scholars enjoy jogging around town, playing
@@ -50,6 +55,11 @@ function Activities() {
         delegated committee that sponsors all sporting activities during the
         school year.
       </h2>
+      <img
+        className="activities-image"
+        src="images/frisbee.jpg"
+        alt="frisbee"
+      />
 
       <h1 className="activities-header">University/Community Involvement</h1>
       <h2 className="activities-info">
@@ -68,6 +78,11 @@ function Activities() {
         trick-or-treating to collect non-perishable food items for the Flint
         Hills Breadbasket.
       </h2>
+      <img
+        className="activities-image-special"
+        src="images/Halloween.jpg"
+        alt="Halloween"
+      />
 
       <h1 className="activities-header">Cultural</h1>
       <h2 className="activities-info">
@@ -87,6 +102,7 @@ function Activities() {
         colleges, cultural experts, and university/community leaders are some of
         the guests you could meet.
       </h2>
+      <img className="activities-image" src="images/museum.jpg" alt="museum" />
 
       <hr />
 

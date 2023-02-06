@@ -29,6 +29,11 @@ function Operations() {
         house. The executive director and managers are hired by the Smith Alumni
         Association, which has governed the house since 1984.
       </h2>
+      <img
+        className="operations-image-special"
+        src="images/rizzler.jpg"
+        alt="The Rizzler"
+      />
 
       <h1 className="operations-header">Meals</h1>
       <h2 className="operations-info">
@@ -49,6 +54,11 @@ function Operations() {
         allow residents to warm up late plates saved for them when they can't
         eat at scheduled meal times.
       </h2>
+      <img
+        className="operations-image"
+        src="images/cooking.jpg"
+        alt="Let Him Cook"
+      />
 
       <h1 className="operations-header">Study Rooms</h1>
       <h2 className="operations-info">
