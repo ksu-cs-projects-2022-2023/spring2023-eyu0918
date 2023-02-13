@@ -283,7 +283,7 @@
   }
 
   .schedule-a-visit {
-    background-image: url('/public/images/1.jpg');
+    background-image: url('/public/images/Visit.JPG');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -328,8 +328,8 @@
   }
 
   .apply-today {
-    background-image: url('/public/images/apply-now.jpg');
-    background-position: center;
+    background-image: url('/public/images/apply-today.JPG');
+    background-position-y: -300px;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;

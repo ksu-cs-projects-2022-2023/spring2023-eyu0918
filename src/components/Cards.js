@@ -32,7 +32,7 @@ function Cards() {
               path="/contact-us"
             />
             <CardItem
-              src="images/1.jpg"
+              src="images/visit.JPG"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="SCHEDULE A VISIT"
               path="/schedule-a-visit"
