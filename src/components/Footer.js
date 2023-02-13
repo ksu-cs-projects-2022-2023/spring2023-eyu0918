@@ -55,7 +55,7 @@ function Footer() {
               Official K-State Page
             </Link>
             <Link
-              to="https://www.mapquest.com/us/kansas/smith-scholarship-house-289277455"
+              to="https://www.google.com/maps/place/Smith+Scholarship+House/@39.1829263,-96.5856782,17z/data=!3m1!4b1!4m6!3m5!1s0x87bdcd869fbdbb81:0xefeac6391f781beb!8m2!3d39.1829222!4d-96.5834842!16s%2Fg%2F1v1kqct_"
               target="_blank"
             >
               Location

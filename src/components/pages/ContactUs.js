@@ -58,10 +58,11 @@ function ContactUs() {
             alt="Anneliese Snyder"
             className="contact-us-image"
           />
-          <div className="centered-text">
+          <div className="centered-text-special">
             <p>
               Anneliese Snyder <br />
               Executive Director <br />
+              *PHONE NUMBER* <br />
               ???@ksu.edu <br />
             </p>
           </div>

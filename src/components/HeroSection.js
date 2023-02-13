@@ -16,15 +16,13 @@ function HeroSection() {
         >
           GET STARTED
         </Button>
-        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
-          <Button
-            className="btns"
-            buttonStyle="btn--primary"
-            buttonSize="btn--large"
-          >
-            WATCH TRAILER <i class="fa-sharp fa-solid fa-circle-play" />
-          </Button>
-        </a>
+        <Button
+          className="btns"
+          buttonStyle="btn--primary"
+          buttonSize="btn--large"
+        >
+          WATCH TRAILER <i class="fa-sharp fa-solid fa-circle-play" />
+        </Button>
       </div>
     </div>
   );
