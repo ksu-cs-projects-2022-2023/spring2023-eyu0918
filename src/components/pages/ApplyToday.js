@@ -25,12 +25,35 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 });
 
 function ApplyToday() {
-  const [grade, setGrade] = useState("");
   const [open, setOpen] = useState(false);
   const [openSnack, setOpenSnack] = useState(false);
 
+  const [nameValue, setNameValue] = useState("");
+  const [programValue, setProgramValue] = useState("");
+  const [hsValue, setHsValue] = useState("");
+  const [gpaValue, setGPAValue] = useState("");
+  const [actValue, setACTValue] = useState("");
+  const [secEdValue, setSecEdValue] = useState("");
+  const [addressValue, setAddressValue] = useState("");
+  const [phoneValue, setPhoneValue] = useState("");
+  const [emailValue, setEmailValue] = useState("");
+  const [birthValue, setBirthValue] = useState("");
+
+  const [gradeValue, setGradeValue] = useState("");
+  const [gradDateValue, setGradDateValue] = useState("");
+  const [awardValue, setAwardValue] = useState("");
+  const [extraValue, setExtraValue] = useState("");
+  const [jobValue, setJobValue] = useState("");
+  const [familyValue, setFamilyValue] = useState("");
+  const [reasonValue, setReasonValue] = useState("");
+  const [sevenValue, setSevenValue] = useState("");
+  const [roommateValue, setRoommateValue] = useState("");
+  const [referenceValue, setReferenceValue] = useState("");
+  const [signatureValue, setSignatureValue] = useState("");
+  const [dateValue, setDateValue] = useState("");
+
   const handleChange = (event) => {
-    setGrade(event.target.value);
+    setGradeValue(event.target.value);
   };
 
   const handleClickOpen = () => {
@@ -40,6 +63,30 @@ function ApplyToday() {
   const handleSnackClickOpen = () => {
     setOpenSnack(true);
     setOpen(false);
+
+    setNameValue("");
+    setProgramValue("");
+    setHsValue("");
+    setGPAValue("");
+    setACTValue("");
+    setSecEdValue("");
+    setAddressValue("");
+    setPhoneValue("");
+    setEmailValue("");
+    setBirthValue("");
+
+    setGradeValue("");
+    setGradDateValue("");
+    setAwardValue("");
+    setExtraValue("");
+    setJobValue("");
+    setFamilyValue("");
+    setReasonValue("");
+    setSevenValue("");
+    setRoommateValue("");
+    setReferenceValue("");
+    setSignatureValue("");
+    setDateValue("");
   };
 
   const handleClose = () => {
@@ -48,10 +95,11 @@ function ApplyToday() {
 
   const handleSnackClose = (event, reason) => {
     if (reason === "clickaway") {
-      return;
+      setOpenSnack(false);
     }
 
     setOpen(false);
+    setOpenSnack(false);
   };
 
   return (
@@ -81,6 +129,9 @@ function ApplyToday() {
         as possible.
       </p>
 
+      <br />
+      <br />
+
       <div className="apply-input-container">
         <TextField
           required
@@ -88,6 +139,8 @@ function ApplyToday() {
           label="Name"
           variant="filled"
           margin="normal"
+          value={nameValue}
+          onChange={(e) => setNameValue(e.target.value)}
         />
         <TextField
           required
@@ -95,6 +148,8 @@ function ApplyToday() {
           label="Intended Program(s) of Study"
           variant="filled"
           margin="normal"
+          value={programValue}
+          onChange={(e) => setProgramValue(e.target.value)}
         />
         <TextField
           required
@@ -102,6 +157,8 @@ function ApplyToday() {
           label="High School Name & City"
           variant="filled"
           margin="normal"
+          value={hsValue}
+          onChange={(e) => setHsValue(e.target.value)}
         />
         <TextField
           required
@@ -109,6 +166,8 @@ function ApplyToday() {
           label="Current Unweighted GPA"
           variant="filled"
           margin="normal"
+          value={gpaValue}
+          onChange={(e) => setGPAValue(e.target.value)}
         />
         <TextField
           required
@@ -116,6 +175,8 @@ function ApplyToday() {
           label="ACT/SAT scores"
           variant="filled"
           margin="normal"
+          value={actValue}
+          onChange={(e) => setACTValue(e.target.value)}
         />
         <TextField
           required
@@ -125,6 +186,8 @@ function ApplyToday() {
           label="Other Secondary Education (Names/Locations only)"
           variant="filled"
           margin="normal"
+          value={secEdValue}
+          onChange={(e) => setSecEdValue(e.target.value)}
         />
         <TextField
           required
@@ -134,6 +197,8 @@ function ApplyToday() {
           label="Permanent Address"
           variant="filled"
           margin="normal"
+          value={addressValue}
+          onChange={(e) => setAddressValue(e.target.value)}
         />
         <TextField
           required
@@ -141,6 +206,8 @@ function ApplyToday() {
           label="Phone Number"
           variant="filled"
           margin="normal"
+          value={phoneValue}
+          onChange={(e) => setPhoneValue(e.target.value)}
         />
         <TextField
           required
@@ -148,6 +215,8 @@ function ApplyToday() {
           label="Email Address"
           variant="filled"
           margin="normal"
+          value={emailValue}
+          onChange={(e) => setEmailValue(e.target.value)}
         />
         <TextField
           required
@@ -155,6 +224,8 @@ function ApplyToday() {
           label="Date of Birth"
           variant="filled"
           margin="normal"
+          value={birthValue}
+          onChange={(e) => setBirthValue(e.target.value)}
         />
       </div>
 
@@ -169,7 +240,7 @@ function ApplyToday() {
           <InputLabel id="grade-select-label">Status</InputLabel>
           <Select
             labelId="grade-select-label"
-            value={grade}
+            value={gradeValue}
             label="Status"
             onChange={handleChange}
           >
@@ -185,7 +256,12 @@ function ApplyToday() {
         completed.
       </h2>
       <div className="apply-input-container">
-        <TextField fullWidth variant="filled"></TextField>
+        <TextField
+          fullWidth
+          variant="filled"
+          value={gradDateValue}
+          onChange={(e) => setGradDateValue(e.target.value)}
+        ></TextField>
       </div>
 
       <h2 className="apply-info-2">
@@ -193,47 +269,94 @@ function ApplyToday() {
         have received.
       </h2>
       <div className="apply-input-container">
-        <TextField fullWidth multiline rows={8} variant="filled"></TextField>
+        <TextField
+          fullWidth
+          multiline
+          rows={8}
+          variant="filled"
+          value={awardValue}
+          onChange={(e) => setAwardValue(e.target.value)}
+        ></TextField>
       </div>
 
       <h2 className="apply-info-2">
         3. Describe your extracurricular activities.
       </h2>
       <div className="apply-input-container">
-        <TextField fullWidth multiline rows={8} variant="filled"></TextField>
+        <TextField
+          fullWidth
+          multiline
+          rows={8}
+          variant="filled"
+          value={extraValue}
+          onChange={(e) => setExtraValue(e.target.value)}
+        ></TextField>
       </div>
 
       <h2 className="apply-info-2">4. List any jobs or work experience.</h2>
       <div className="apply-input-container">
-        <TextField fullWidth multiline rows={8} variant="filled"></TextField>
+        <TextField
+          fullWidth
+          multiline
+          rows={8}
+          variant="filled"
+          value={jobValue}
+          onChange={(e) => setJobValue(e.target.value)}
+        ></TextField>
       </div>
 
       <h2 className="apply-info-2">
         5. Describe your family structure and a typical day.
       </h2>
       <div className="apply-input-container">
-        <TextField fullWidth multiline rows={8} variant="filled"></TextField>
+        <TextField
+          fullWidth
+          multiline
+          rows={8}
+          variant="filled"
+          value={familyValue}
+          onChange={(e) => setFamilyValue(e.target.value)}
+        ></TextField>
       </div>
 
       <h2 className="apply-info-2">
         6. Explain your reasons for attending university.
       </h2>
       <div className="apply-input-container">
-        <TextField fullWidth multiline rows={8} variant="filled"></TextField>
+        <TextField
+          fullWidth
+          multiline
+          rows={8}
+          variant="filled"
+          value={reasonValue}
+          onChange={(e) => setReasonValue(e.target.value)}
+        ></TextField>
       </div>
 
       <h2 className="apply-info-2">
         7. In seven (7) words or fewer, why choose Smith House?
       </h2>
       <div className="apply-input-container">
-        <TextField fullWidth variant="filled"></TextField>
+        <TextField
+          fullWidth
+          variant="filled"
+          value={sevenValue}
+          onChange={(e) => setSevenValue(e.target.value)}
+        ></TextField>
       </div>
 
       <h2 className="apply-info-2">
         8. Illustrate your ideal roommate's personality.
       </h2>
       <div className="apply-input-container">
-        <TextField fullWidth multiline rows={8} variant="filled"></TextField>
+        <TextField
+          fullWidth
+          multiline
+          rows={8}
+          variant="filled"
+          value={roommateValue}
+          onChange={(e) => setRoommateValue(e.target.value)}
+        ></TextField>
       </div>
 
       <h2 className="apply-info-2">
@@ -243,7 +366,14 @@ function ApplyToday() {
         role.
       </h2>
       <div className="apply-input-container">
-        <TextField fullWidth multiline rows={8} variant="filled"></TextField>
+        <TextField
+          fullWidth
+          multiline
+          rows={8}
+          variant="filled"
+          value={referenceValue}
+          onChange={(e) => setReferenceValue(e.target.value)}
+        ></TextField>
       </div>
 
       <h2 className="apply-info-2">
@@ -289,6 +419,8 @@ function ApplyToday() {
           label="Signature"
           variant="filled"
           margin="normal"
+          value={signatureValue}
+          onChange={(e) => setSignatureValue(e.target.value)}
         />
         <TextField
           required
@@ -296,6 +428,8 @@ function ApplyToday() {
           label="Date"
           variant="filled"
           margin="normal"
+          value={dateValue}
+          onChange={(e) => setDateValue(e.target.value)}
         />
         <h2 className="apply-info-2">Transcript (REQUIRED)</h2>
         <Button variant="contained" component="label">

@@ -29,24 +29,23 @@ function Footer() {
           <div class="footer-link-items">
             <h2>Documents</h2>
             <Link
-              to="https://www.smithscholarshiphouse.org/_files/ugd/4ecb5a_146a7d282a004de6bad2c7e54e806865.pdf"
+              to="documents/Smith House Constitution 2017.pdf"
               target="_blank"
             >
               Constitution
             </Link>
             <Link
-              to="https://www.smithscholarshiphouse.org/_files/ugd/4ecb5a_282ee7f46ae04b3b9541aec5142252eb.pdf"
+              to="documents/Bylaws of Smith House Alumni Association.pdf"
               target="_blank"
             >
               By-laws
             </Link>
-            <Link
-              to="https://www.k-state.edu/smithhouse/docs/Smith%20app.pdf"
-              target="_blank"
-            >
+            <Link to="documents/Smith House Application.pdf" target="_blank">
               Application
             </Link>
-            <Link to="/">Brochure</Link>
+            <Link to="documents/Smith House Brochure 2023.pdf" target="_blank">
+              Brochure
+            </Link>
           </div>
           <div class="footer-link-items">
             <h2>Stay Connected</h2>

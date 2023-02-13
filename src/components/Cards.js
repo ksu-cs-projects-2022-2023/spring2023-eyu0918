@@ -11,7 +11,7 @@ function Cards() {
           <ul className="cards__items">
             <CardItem
               src="images/about.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Learn more about Smith Scholarship House, including our Values, Operations, Activities, and Costs."
               label="ABOUT"
               path="/about"
             />
@@ -19,7 +19,7 @@ function Cards() {
           <ul className="cards__items">
             <CardItem
               src="images/members.jpeg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Meet the current members of the house."
               label="MEMBERS"
               path="/Members"
             />
@@ -27,13 +27,13 @@ function Cards() {
           <ul className="cards__items">
             <CardItem
               src="images/contact-us.JPG"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Have questions? Feel free to reach out."
               label="CONTACT US"
               path="/contact-us"
             />
             <CardItem
               src="images/visit.JPG"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Schedule a proper tour of the house and experience the power of the brotherhood."
               label="SCHEDULE A VISIT"
               path="/schedule-a-visit"
             />
