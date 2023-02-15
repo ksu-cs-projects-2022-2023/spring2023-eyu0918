@@ -28,24 +28,24 @@ function Footer() {
           </div>
           <div class="footer-link-items">
             <h2>Documents</h2>
-            <Link
-              to="documents/Smith House Constitution 2017.pdf"
+            <a
+              href="documents/Smith House Constitution 2017.pdf"
               target="_blank"
             >
               Constitution
-            </Link>
-            <Link
-              to="documents/Bylaws of Smith House Alumni Association.pdf"
+            </a>
+            <a
+              href="documents/Bylaws of Smith House Alumni Association.pdf"
               target="_blank"
             >
               By-laws
-            </Link>
-            <Link to="documents/Smith House Application.pdf" target="_blank">
+            </a>
+            <a href="documents/Smith House Application.pdf" target="_blank">
               Application
-            </Link>
-            <Link to="documents/Smith House Brochure 2023.pdf" target="_blank">
+            </a>
+            <a href="documents/Smith House Brochure 2023.pdf" target="_blank">
               Brochure
-            </Link>
+            </a>
           </div>
           <div class="footer-link-items">
             <h2>Stay Connected</h2>

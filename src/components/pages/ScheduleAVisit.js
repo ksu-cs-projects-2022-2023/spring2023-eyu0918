@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "../../App.css";
 import "../calendar.css";
 import "react-calendar/dist/Calendar.css";
@@ -66,6 +67,29 @@ function ScheduleAVisit() {
   const [phoneValue, setPhoneValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
 
+  var visitorInfo = {
+    visitor_name: nameValue,
+    visitor_ht: htValue,
+    visitor_hs: hsValue,
+    visitor_phone: phoneValue,
+    visitor_email: emailValue,
+    visiting_date: date,
+    available_time: visitTime,
+  };
+
+  const sendEmail = (e) => {
+    emailjs
+      .send("gmail", "schedule_a_visit", visitorInfo, "A_cAZ_h_IxE7dDDVZ")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   const handleChange = (event) => {
     const {
       target: { value },
@@ -89,6 +113,8 @@ function ScheduleAVisit() {
 
     setDate(new Date());
     setVisitTime([]);
+
+    sendEmail();
   };
 
   const handleClose = () => {

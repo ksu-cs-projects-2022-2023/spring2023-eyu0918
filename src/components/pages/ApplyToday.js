@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "../../App.css";
 import Footer from "../Footer";
 import TextField from "@mui/material/TextField";
@@ -52,6 +53,42 @@ function ApplyToday() {
   const [signatureValue, setSignatureValue] = useState("");
   const [dateValue, setDateValue] = useState("");
 
+  var applicantInfo = {
+    applicant_name: nameValue,
+    intended_study: programValue,
+    applicant_hs: hsValue,
+    applicant_GPA: gpaValue,
+    applicant_ACT: actValue,
+    other_sec_ed: secEdValue,
+    applicant_address: addressValue,
+    applicant_phone: phoneValue,
+    applicant_email: emailValue,
+    appilcant_dob: birthValue,
+    applicant_status: gradeValue,
+    applicant_grad_date: gradDateValue,
+    academic_accomp: awardValue,
+    extracurricular: extraValue,
+    job_experience: jobValue,
+    family_structure: familyValue,
+    university_reason: reasonValue,
+    why_smith: sevenValue,
+    ideal_roommate: roommateValue,
+    two_reference: reasonValue,
+  };
+
+  const sendEmail = (e) => {
+    emailjs
+      .send("gmail", "apply_today", applicantInfo, "A_cAZ_h_IxE7dDDVZ")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   const handleChange = (event) => {
     setGradeValue(event.target.value);
   };
@@ -87,6 +124,8 @@ function ApplyToday() {
     setReferenceValue("");
     setSignatureValue("");
     setDateValue("");
+
+    sendEmail();
   };
 
   const handleClose = () => {
@@ -172,7 +211,7 @@ function ApplyToday() {
         <TextField
           required
           fullWidth
-          label="ACT/SAT scores"
+          label="ACT/SAT Score (Highest)"
           variant="filled"
           margin="normal"
           value={actValue}
@@ -232,8 +271,8 @@ function ApplyToday() {
       <hr />
 
       <h2 className="apply-info-2">
-        1. As a potential new house members, what will be your status as a
-        Kansas State University student?
+        1. As a potential new house member, what will your status be as a Kansas
+        State University student?
       </h2>
       <div className="apply-input-container">
         <FormControl fullWidth>
@@ -251,7 +290,7 @@ function ApplyToday() {
         </FormControl>
       </div>
       <h2 className="apply-info-2">
-        When is/was your high school graduation? If not currently in high
+        2. When is/was your high school graduation? If not currently in high
         school, please indicate the number of semesters or credit hours
         completed.
       </h2>
@@ -265,8 +304,8 @@ function ApplyToday() {
       </div>
 
       <h2 className="apply-info-2">
-        2. Indicate your academic accomplishments and any awards and honors you
-        have received.
+        3. Indicate your academic accomplishments and any awards/honors you have
+        received.
       </h2>
       <div className="apply-input-container">
         <TextField
@@ -280,7 +319,7 @@ function ApplyToday() {
       </div>
 
       <h2 className="apply-info-2">
-        3. Describe your extracurricular activities.
+        4. Describe your extracurricular activities.
       </h2>
       <div className="apply-input-container">
         <TextField
@@ -293,7 +332,7 @@ function ApplyToday() {
         ></TextField>
       </div>
 
-      <h2 className="apply-info-2">4. List any jobs or work experience.</h2>
+      <h2 className="apply-info-2">5. List any jobs or work experience.</h2>
       <div className="apply-input-container">
         <TextField
           fullWidth
@@ -306,7 +345,7 @@ function ApplyToday() {
       </div>
 
       <h2 className="apply-info-2">
-        5. Describe your family structure and a typical day.
+        6. Describe your family structure and a typical day.
       </h2>
       <div className="apply-input-container">
         <TextField
@@ -320,7 +359,7 @@ function ApplyToday() {
       </div>
 
       <h2 className="apply-info-2">
-        6. Explain your reasons for attending university.
+        7. Explain your reasons for attending university.
       </h2>
       <div className="apply-input-container">
         <TextField
@@ -334,7 +373,7 @@ function ApplyToday() {
       </div>
 
       <h2 className="apply-info-2">
-        7. In seven (7) words or fewer, why choose Smith House?
+        8. In seven (7) words or fewer, why choose Smith House?
       </h2>
       <div className="apply-input-container">
         <TextField
@@ -346,7 +385,7 @@ function ApplyToday() {
       </div>
 
       <h2 className="apply-info-2">
-        8. Illustrate your ideal roommate's personality.
+        9. Illustrate your ideal roommate's personality.
       </h2>
       <div className="apply-input-container">
         <TextField
@@ -360,7 +399,7 @@ function ApplyToday() {
       </div>
 
       <h2 className="apply-info-2">
-        9. Please provide the names and contact information of two (2)
+        10. Please provide the names and contact information of two (2)
         non-family members or relatives who know you well and could comment on
         your potential as a student, house mate, employee, or other similar
         role.
@@ -377,7 +416,7 @@ function ApplyToday() {
       </div>
 
       <h2 className="apply-info-2">
-        <u>10. Statment of Non-Descrimination</u>
+        <u>11. Statment of Non-Descrimination</u>
       </h2>
       <h4 className="apply-info-3">
         Smith Scholarship House is open to all men enrolled at Kansas State
