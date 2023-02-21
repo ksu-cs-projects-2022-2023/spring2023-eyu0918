@@ -2,11 +2,8 @@
 ## Smith Scholarship House Website
 ### Advisor: Dr. Lior Shamir
 
-## Overview
-### The Maitland E. Smith Scholarship House is the place I have been living at for the past 3 and half years of 
-my college career. Currently, the house does have a website (www.smithscholarshiphouse.org), 
-however, it is quite simple and only has a few pages that contain images and paragraphs. In my opinion, 
-there are some great improvements that can be made, both appearance wise and functionality wise. 
+### Overview
+The Maitland E. Smith Scholarship House is the place I have been living at for the past 3 and half years of my college career. Currently, the house does have a website (www.smithscholarshiphouse.org), however, it is quite simple and only has a few pages that contain images and paragraphs. In my opinion, there are some great improvements that can be made, both appearance wise and functionality wise. 
 
 Overall, improving the quality of our website can help greatly with recruiting, as people who are interested 
 in becoming a member can utilize the site to learn more about the culture of the house. Additionally, this 
@@ -15,8 +12,8 @@ Finally, the alumni board will possibly have the ability to donate to the house 
 an implementation they have asked for in the past that saves them the trouble from donating by traveling 
 to the house or writing a physical check.
 
-## Problem/Solution
-### Like I briefly mentioned above, I believe the single biggest concern when it comes to the existing website 
+### Problem/Solution
+Like I briefly mentioned above, I believe the single biggest concern when it comes to the existing website 
 revolves around recruiting. Currently, our recruiting strategy is sending out a physical pamphlet in the 
 mail to all the qualifying high school seniors around the country. However, the pamphlet, if it isn’t lost or 
 misplaced, can only cover so much information. Being in the digital world that we live in today, a well-organized website provides better and more detailed information for the candidates who wants to learn 
