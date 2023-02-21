@@ -51,17 +51,17 @@ learned, but also discover new knowledges along the way.
 
 ### Feature Lists
 #### Minimum Viable Product (MVP)
-  ▪ A functional website that contains a home page, navigation bar, footer, and 3-4 additional pages.
-  ▪ Each page has a title and a minimal of one paragraph of text and one image.
-  ▪ All current members displayed on the members page with its data generated from the backend.
+  ▪ A functional website that contains a home page, navigation bar, footer, and 3-4 additional pages. <br />
+  ▪ Each page has a title and a minimal of one paragraph of text and one image. <br />
+  ▪ All current members displayed on the members page with its data generated from the backend. <br />
   ▪ Website follows a certain CSS style so that it looks cleaner and more organized.
 
 #### Version 1.0
-  ▪ Allow users to have the ability of scheduling a visit AND applying directly on the site.
-  ▪ Create filtering ability for members page to establish deeper connections between individuals.
+  ▪ Allow users to have the ability of scheduling a visit AND applying directly on the site. <br />
+  ▪ Create filtering ability for members page to establish deeper connections between individuals. <br />
   ▪ Add the ability to pay rent/donate.
  
 #### Version 2.0
-  ▪ Allow current house members to log in and access internal documents.
-  ▪ Create a chatting service to better the communication between the house and the alumni board.
+  ▪ Allow current house members to log in and access internal documents. <br />
+  ▪ Create a chatting service to better the communication between the house and the alumni board. <br />
   ▪ Make the webpage more interactive.
