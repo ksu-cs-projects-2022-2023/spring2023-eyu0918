@@ -27,3 +27,41 @@ list out each member individually with their information attached, such as major
 hobbies & interests, etc.. For the ones that have a LinkedIn profile, that will be included as well for 
 people to connect with them. Finally, there will be filtering options at the top that allows you to filter 
 this member list. I will go into more details in the section below.
+
+### Algorithmic Functionality
+The majority of my algorithmic functionality will happen in the backend within the members’ page. After 
+listing out each member individually, I will have a filtering bar at the top that contains several filtering 
+options. This can be especially beneficial for incoming members, as they will have ability to look for 
+members with similar hobbies & interests so that they can quickly make friends and adapt to the 
+culture.
+
+To achieve the above functionalities, it will require me to write a few queries. Since I am planning on 
+using Cypher, a graph database language, to support all my data, I will have to write and import queries 
+written in Cypher into my frontend to make this filtering bar fully functional.
+
+### Qualifications
+I feel qualified for this project because I have had previous experience in web developing, specifically 
+working with React on the frontend and Cypher in the backend.
+
+During my most-recent internship this past summer, I worked with a pre-existing internal website that 
+was built with React and Cypher. While it was an interesting learning experience, I also saw how 
+powerful these tools can be when combined and thus developed strong interest throughout this 
+process. I believe that this project is a great opportunity to not only refresh my mind on what I have 
+learned, but also discover new knowledges along the way.
+
+### Feature Lists
+#### Minimum Viable Product (MVP)
+  ▪ A functional website that contains a home page, navigation bar, footer, and 3-4 additional pages.
+  ▪ Each page has a title and a minimal of one paragraph of text and one image.
+  ▪ All current members displayed on the members page with its data generated from the backend.
+  ▪ Website follows a certain CSS style so that it looks cleaner and more organized.
+
+#### Version 1.0
+  ▪ Allow users to have the ability of scheduling a visit AND applying directly on the site.
+  ▪ Create filtering ability for members page to establish deeper connections between individuals.
+  ▪ Add the ability to pay rent/donate.
+ 
+#### Version 2.0
+  ▪ Allow current house members to log in and access internal documents.
+  ▪ Create a chatting service to better the communication between the house and the alumni board.
+  ▪ Make the webpage more interactive.
