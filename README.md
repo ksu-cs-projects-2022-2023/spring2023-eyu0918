@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Eric Yu CIS598 Senior Project
+## Smith Scholarship House Website
+### Advisor: Dr. Lior Shamir
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview
+The Maitland E. Smith Scholarship House is the place I have been living at for the past 3 and half years of my college career. Currently, the house does have a website (www.smithscholarshiphouse.org), however, it is quite simple and only has a few pages that contain images and paragraphs. In my opinion, there are some great improvements that can be made, both appearance wise and functionality wise. 
 
-## Available Scripts
+Overall, improving the quality of our website can help greatly with recruiting, as people who are interested 
+in becoming a member can utilize the site to learn more about the culture of the house. Additionally, this 
+can also be a great platform for individuals to stay connected with current house members or alumnus. 
+Finally, the alumni board will possibly have the ability to donate to the house through this site, which is 
+an implementation they have asked for in the past that saves them the trouble from donating by traveling 
+to the house or writing a physical check.
 
-In the project directory, you can run:
+### Problem/Solution
+Like I briefly mentioned above, I believe the single biggest concern when it comes to the existing website 
+revolves around recruiting. Currently, our recruiting strategy is sending out a physical pamphlet in the 
+mail to all the qualifying high school seniors around the country. However, the pamphlet, if it isn’t lost or 
+misplaced, can only cover so much information. Being in the digital world that we live in today, a well-organized website provides better and more detailed information for the candidates who wants to learn 
+more about the house. 
 
-### `npm start`
+Another problem that I see with the current website is the “Current Member” page. Specifically, this 
+page only contains a copy of our most-recent composite picture. I believe that there are some big 
+improvements that can be made within this page to make it more beneficial for not just incoming 
+members, but also current members as well. My current thought is besides the composite picture, I will 
+list out each member individually with their information attached, such as major, year in the house, 
+hobbies & interests, etc.. For the ones that have a LinkedIn profile, that will be included as well for 
+people to connect with them. Finally, there will be filtering options at the top that allows you to filter 
+this member list. I will go into more details in the section below.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Algorithmic Functionality
+The majority of my algorithmic functionality will happen in the backend within the members’ page. After 
+listing out each member individually, I will have a filtering bar at the top that contains several filtering 
+options. This can be especially beneficial for incoming members, as they will have ability to look for 
+members with similar hobbies & interests so that they can quickly make friends and adapt to the 
+culture.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To achieve the above functionalities, it will require me to write a few queries. Since I am planning on 
+using Cypher, a graph database language, to support all my data, I will have to write and import queries 
+written in Cypher into my frontend to make this filtering bar fully functional.
 
-### `npm test`
+### Qualifications
+I feel qualified for this project because I have had previous experience in web developing, specifically 
+working with React on the frontend and Cypher in the backend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+During my most-recent internship this past summer, I worked with a pre-existing internal website that 
+was built with React and Cypher. While it was an interesting learning experience, I also saw how 
+powerful these tools can be when combined and thus developed strong interest throughout this 
+process. I believe that this project is a great opportunity to not only refresh my mind on what I have 
+learned, but also discover new knowledges along the way.
 
-### `npm run build`
+### Feature Lists
+#### Minimum Viable Product (MVP)
+  ▪ A functional website that contains a home page, navigation bar, footer, and 3-4 additional pages. <br />
+  ▪ Each page has a title and a minimal of one paragraph of text and one image. <br />
+  ▪ All current members displayed on the members page with its data generated from the backend. <br />
+  ▪ Website follows a certain CSS style so that it looks cleaner and more organized.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Version 1.0
+  ▪ Allow users to have the ability of scheduling a visit AND applying directly on the site. <br />
+  ▪ Create filtering ability for members page to establish deeper connections between individuals. <br />
+  ▪ Add the ability to pay rent/donate.
+ 
+#### Version 2.0
+  ▪ Allow current house members to log in and access internal documents. <br />
+  ▪ Create a chatting service to better the communication between the house and the alumni board. <br />
+  ▪ Make the webpage more interactive.
