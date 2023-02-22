@@ -1,8 +1,16 @@
 import React from "react";
 import "../../App.css";
 import Footer from "../Footer";
+import { useReadCypher } from "use-neo4j/dist/cypher";
 
 function Members() {
+  const query = `MATCH (p:Person) RETURN p`;
+
+  const { loading, first } = useReadCypher(query);
+  if (loading) return <div>Loading...</div>;
+
+  const value = first.get("p");
+
   return (
     <>
       <h1 className="members">MEMBERS</h1>
@@ -24,6 +32,7 @@ function Members() {
           </a>
         </div>
       </div>
+      <div>{value.properties.firstName}</div>
       <Footer />
     </>
   );
