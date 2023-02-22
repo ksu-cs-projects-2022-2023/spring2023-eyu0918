@@ -28,6 +28,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 function ApplyToday() {
   const [open, setOpen] = useState(false);
   const [openSnack, setOpenSnack] = useState(false);
+  const [openErrorSnack, setOpenErrorSnack] = useState(false);
 
   const [nameValue, setNameValue] = useState("");
   const [programValue, setProgramValue] = useState("");
@@ -49,7 +50,19 @@ function ApplyToday() {
   const [reasonValue, setReasonValue] = useState("");
   const [sevenValue, setSevenValue] = useState("");
   const [roommateValue, setRoommateValue] = useState("");
-  const [referenceValue, setReferenceValue] = useState("");
+
+  const [reference1NameValue, setReference1NameValue] = useState("");
+  const [reference1RelationValue, setReference1RelationValue] = useState("");
+  const [reference1PhoneValue, setReference1PhoneValue] = useState("");
+  const [reference1EmailValue, setReference1EmailValue] = useState("");
+  const [reference1AddressValue, setReference1AddressValue] = useState("");
+
+  const [reference2NameValue, setReference2NameValue] = useState("");
+  const [reference2RelationValue, setReference2RelationValue] = useState("");
+  const [reference2PhoneValue, setReference2PhoneValue] = useState("");
+  const [reference2EmailValue, setReference2EmailValue] = useState("");
+  const [reference2AddressValue, setReference2AddressValue] = useState("");
+
   const [signatureValue, setSignatureValue] = useState("");
   const [dateValue, setDateValue] = useState("");
 
@@ -64,6 +77,7 @@ function ApplyToday() {
     applicant_phone: phoneValue,
     applicant_email: emailValue,
     appilcant_dob: birthValue,
+
     applicant_status: gradeValue,
     applicant_grad_date: gradDateValue,
     academic_accomp: awardValue,
@@ -73,7 +87,18 @@ function ApplyToday() {
     university_reason: reasonValue,
     why_smith: sevenValue,
     ideal_roommate: roommateValue,
-    two_reference: reasonValue,
+
+    reference_1_name: reference1NameValue,
+    reference_1_relation: reference1RelationValue,
+    reference_1_phone: reference1PhoneValue,
+    reference_1_email: reference1EmailValue,
+    reference_1_address: reference1AddressValue,
+
+    reference_2_name: reference2NameValue,
+    reference_2_relation: reference2RelationValue,
+    reference_2_phone: reference2PhoneValue,
+    reference_2_email: reference2EmailValue,
+    reference_2_address: reference2AddressValue,
   };
 
   const sendEmail = (e) => {
@@ -94,7 +119,43 @@ function ApplyToday() {
   };
 
   const handleClickOpen = () => {
-    setOpen(true);
+    if (
+      nameValue === "" ||
+      programValue === "" ||
+      hsValue === "" ||
+      gpaValue === "" ||
+      actValue === "" ||
+      secEdValue === "" ||
+      addressValue === "" ||
+      phoneValue === "" ||
+      emailValue === "" ||
+      birthValue === "" ||
+      gradeValue === "" ||
+      gradDateValue === "" ||
+      awardValue === "" ||
+      extraValue === "" ||
+      jobValue === "" ||
+      familyValue === "" ||
+      reasonValue === "" ||
+      sevenValue === "" ||
+      roommateValue === "" ||
+      reference1NameValue === "" ||
+      reference1RelationValue === "" ||
+      reference1PhoneValue === "" ||
+      reference1EmailValue === "" ||
+      reference1AddressValue === "" ||
+      reference2NameValue === "" ||
+      reference2RelationValue === "" ||
+      reference2PhoneValue === "" ||
+      reference2EmailValue === "" ||
+      reference2AddressValue === "" ||
+      signatureValue === "" ||
+      dateValue === ""
+    ) {
+      setOpenErrorSnack(true);
+    } else {
+      setOpen(true);
+    }
   };
 
   const handleSnackClickOpen = () => {
@@ -121,7 +182,19 @@ function ApplyToday() {
     setReasonValue("");
     setSevenValue("");
     setRoommateValue("");
-    setReferenceValue("");
+
+    setReference1NameValue("");
+    setReference1RelationValue("");
+    setReference1PhoneValue("");
+    setReference1EmailValue("");
+    setReference1AddressValue("");
+
+    setReference2NameValue("");
+    setReference2RelationValue("");
+    setReference2PhoneValue("");
+    setReference2EmailValue("");
+    setReference2AddressValue("");
+
     setSignatureValue("");
     setDateValue("");
 
@@ -139,6 +212,7 @@ function ApplyToday() {
 
     setOpen(false);
     setOpenSnack(false);
+    setOpenErrorSnack(false);
   };
 
   return (
@@ -153,7 +227,7 @@ function ApplyToday() {
         after applying. During your visit, our Recruiting Chair(s) will give you
         a proper tour of the house along with an interview. Click{" "}
         <a href="/schedule-a-visit">HERE</a> to schedule a visit. <br /> <br />-
-        Wemake no final decisions about accepting your application until{" "}
+        We make no final decisions about accepting your application until{" "}
         <b>after</b> an interview. We will notify you of your status by{" "}
         <b>April 1st</b> at the latest. <br />
         <br />
@@ -164,8 +238,9 @@ function ApplyToday() {
         live for all residents. <br />
         <br />- This application, in conjunction with your interview, will form
         the basis of our decision to your acceptance or denial. Please answer
-        the following questions truthfully while being as organized and complete
-        as possible.
+        the following questions truthfully while being as complete and organized
+        as possible. For any field that does not apply to you, please enter
+        'N/A'.
       </p>
 
       <br />
@@ -297,6 +372,7 @@ function ApplyToday() {
       <div className="apply-input-container">
         <TextField
           fullWidth
+          required
           variant="filled"
           value={gradDateValue}
           onChange={(e) => setGradDateValue(e.target.value)}
@@ -404,17 +480,114 @@ function ApplyToday() {
         your potential as a student, house mate, employee, or other similar
         role.
       </h2>
-      <div className="apply-input-container">
+      <div className="apply-input-container-2">
+        <h4>Reference #1</h4>
+        <br />
         <TextField
           fullWidth
-          multiline
-          rows={8}
           variant="filled"
-          value={referenceValue}
-          onChange={(e) => setReferenceValue(e.target.value)}
+          value={reference1NameValue}
+          onChange={(e) => setReference1NameValue(e.target.value)}
+          label="Name"
         ></TextField>
       </div>
-
+      <div className="apply-input-container-2">
+        <br />
+        <TextField
+          fullWidth
+          variant="filled"
+          value={reference1RelationValue}
+          onChange={(e) => setReference1RelationValue(e.target.value)}
+          label="Relationship"
+        ></TextField>
+      </div>
+      <div className="apply-input-container-2">
+        <br />
+        <TextField
+          fullWidth
+          variant="filled"
+          value={reference1PhoneValue}
+          onChange={(e) => setReference1PhoneValue(e.target.value)}
+          label="Phone #"
+        ></TextField>
+      </div>
+      <div className="apply-input-container-2">
+        <br />
+        <TextField
+          fullWidth
+          variant="filled"
+          value={reference1EmailValue}
+          onChange={(e) => setReference1EmailValue(e.target.value)}
+          label="Email"
+        ></TextField>
+      </div>
+      <div className="apply-input-container-2">
+        <br />
+        <TextField
+          fullWidth
+          variant="filled"
+          multiline
+          rows={3}
+          value={reference1AddressValue}
+          onChange={(e) => setReference1AddressValue(e.target.value)}
+          label="Address"
+        ></TextField>
+      </div>
+      <br />
+      <div className="apply-input-container-2">
+        <h4>Reference #2</h4>
+        <br />
+        <TextField
+          fullWidth
+          variant="filled"
+          value={reference2NameValue}
+          onChange={(e) => setReference2NameValue(e.target.value)}
+          label="Name"
+        ></TextField>
+      </div>
+      <div className="apply-input-container-2">
+        <br />
+        <TextField
+          fullWidth
+          variant="filled"
+          value={reference2RelationValue}
+          onChange={(e) => setReference2RelationValue(e.target.value)}
+          label="Relationship"
+        ></TextField>
+      </div>
+      <div className="apply-input-container-2">
+        <br />
+        <TextField
+          fullWidth
+          variant="filled"
+          value={reference2PhoneValue}
+          onChange={(e) => setReference2PhoneValue(e.target.value)}
+          label="Phone #"
+        ></TextField>
+      </div>
+      <div className="apply-input-container-2">
+        <br />
+        <TextField
+          fullWidth
+          variant="filled"
+          value={reference2EmailValue}
+          onChange={(e) => setReference2EmailValue(e.target.value)}
+          label="Email"
+        ></TextField>
+      </div>
+      <div className="apply-input-container-2">
+        <br />
+        <TextField
+          fullWidth
+          variant="filled"
+          multiline
+          rows={3}
+          value={reference2AddressValue}
+          onChange={(e) => setReference2AddressValue(e.target.value)}
+          label="Address"
+        ></TextField>
+      </div>
+      <br />
       <h2 className="apply-info-2">
         <u>11. Statment of Non-Descrimination</u>
       </h2>
@@ -470,17 +643,6 @@ function ApplyToday() {
           value={dateValue}
           onChange={(e) => setDateValue(e.target.value)}
         />
-        <h2 className="apply-info-2">Transcript (REQUIRED)</h2>
-        <Button variant="contained" component="label">
-          Upload
-          <input hidden accept="pdf/*" multiple type="file" />
-        </Button>
-
-        <h2 className="apply-info-2">Resume (Optional)</h2>
-        <Button variant="contained" component="label">
-          Upload
-          <input hidden accept="pdf/*" multiple type="file" />
-        </Button>
       </div>
 
       <div className="apply-input-container">
@@ -504,11 +666,21 @@ function ApplyToday() {
           <DialogContent>
             <DialogContentText id="application-submission-confirmation">
               Please confirm your application to Maitland E. Smith Scholarship
-              House by making sure that all required fields are filled and your
-              most recent transcript is attached.
+              House by making sure that all information entered are accurate.
               <br />
               <br />
-              Except to hear back from us in no longer than two weeks maximum.
+              <b>IMPORTANT</b>
+              <br />
+              To submit a copy of your transcript (and an optional resume),
+              choose one of the two following actions:
+              <br /> 1. Email a digital copy to
+              <b> smithscholarshiphouseksu@gmail.com</b> at your earliest
+              convenience.
+              <br /> 2. Bring a physical copy with you and give it to the
+              recruiting chair(s) during your visit.
+              <br />
+              <br />
+              Expect to hear back from us in no longer than two weeks maximum.
               Thank you again for showing interest in Smith Scholarship House.
             </DialogContentText>
           </DialogContent>
@@ -528,6 +700,19 @@ function ApplyToday() {
             sx={{ width: "100%" }}
           >
             Application Submission Successful!
+          </Alert>
+        </Snackbar>
+        <Snackbar
+          open={openErrorSnack}
+          autoHideDuration={6000}
+          onClose={handleSnackClose}
+        >
+          <Alert
+            onClose={handleSnackClose}
+            severity="error"
+            sx={{ width: "100%" }}
+          >
+            Not All Fields Are Filled!
           </Alert>
         </Snackbar>
       </div>

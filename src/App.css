@@ -322,14 +322,24 @@
     height: auto;
   }
 
+  .apply-input-container-2 {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: auto;
+    height: auto;
+  }
+
   .text-center {
     padding-top: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   .apply-today {
-    background-image: url('/public/images/apply-today.JPG');
-    background-position-y: -450px;
+    background-image: url('/public/images/apply-today.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;

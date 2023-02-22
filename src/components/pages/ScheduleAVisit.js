@@ -60,6 +60,7 @@ function ScheduleAVisit() {
   const [visitTime, setVisitTime] = useState([]);
   const [open, setOpen] = useState(false);
   const [openSnack, setOpenSnack] = useState(false);
+  const [openErrorSnack, setOpenErrorSnack] = useState(false);
 
   const [nameValue, setNameValue] = useState("");
   const [htValue, setHtValue] = useState("");
@@ -98,7 +99,17 @@ function ScheduleAVisit() {
   };
 
   const handleClickOpen = () => {
-    setOpen(true);
+    if (
+      nameValue === "" ||
+      htValue === "" ||
+      hsValue === "" ||
+      phoneValue === "" ||
+      emailValue === ""
+    ) {
+      setOpenErrorSnack(true);
+    } else {
+      setOpen(true);
+    }
   };
 
   const handleSnackClickOpen = () => {
@@ -128,6 +139,7 @@ function ScheduleAVisit() {
 
     setOpen(false);
     setOpenSnack(false);
+    setOpenErrorSnack(false);
   };
 
   return (
@@ -258,6 +270,11 @@ function ScheduleAVisit() {
               Selected Date: {date.toDateString()}
               <br />
               Available Time: {visitTime.map((aTime) => aTime + "  ")}
+              <br />
+              <br />
+              Note: If you have selected multiple available time slots above, we
+              will reach back in the next few days to notify you the final
+              decided time for your visit.
             </DialogContentText>
           </DialogContent>
           <DialogActions>
@@ -276,6 +293,19 @@ function ScheduleAVisit() {
             sx={{ width: "100%" }}
           >
             Visit Scheduled Successfully!
+          </Alert>
+        </Snackbar>
+        <Snackbar
+          open={openErrorSnack}
+          autoHideDuration={6000}
+          onClose={handleSnackClose}
+        >
+          <Alert
+            onClose={handleSnackClose}
+            severity="error"
+            sx={{ width: "100%" }}
+          >
+            Not All Required Fields Are Filled!
           </Alert>
         </Snackbar>
       </div>

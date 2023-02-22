@@ -6,7 +6,7 @@ import CardItem from "../CardItem";
 function Activities() {
   return (
     <>
-      <div className="activities">AVTIVITIES</div>
+      <div className="activities">ACTIVITIES</div>
 
       <h1 className="activities-header">Social</h1>
       <h2 className="activities-info">
