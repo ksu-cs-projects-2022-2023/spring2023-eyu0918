@@ -310,7 +310,8 @@
   }
 
   .visit-input-container,
-  .apply-input-container {
+  .apply-input-container,
+  .members-input-container {
     padding-top: 20px;
     padding-bottom: 40px;
     display: flex;
