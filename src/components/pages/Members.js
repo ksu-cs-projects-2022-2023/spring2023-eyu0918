@@ -10,23 +10,24 @@ import { useReadCypher } from "use-neo4j/dist/cypher";
 function Members() {
   const [schoolYear, setSchoolYear] = useState("");
 
-  const query = `MATCH (p:Person ) RETURN p`;
-  const { first } = useReadCypher(query);
+  const allMembersQuery = `MATCH (p:Person) RETURN p`;
+  const { first, records } = useReadCypher(allMembersQuery);
 
   const handleChange = (event) => {
     setSchoolYear(event.target.value);
   };
 
-  let value;
+  let allMembers;
 
-  if (first === undefined) {
+  if (first === undefined || records === undefined) {
     return <div>LOADING...</div>;
   } else {
-    value = first.get("p");
+    allMembers = records.map((x) => x.get("p").properties);
 
     return (
       <>
         <h1 className="members">MEMBERS</h1>
+
         <div className="members-input-container">
           <FormControl fullWidth>
             <InputLabel id="year-select-label">School Year</InputLabel>
@@ -42,29 +43,38 @@ function Members() {
             </Select>
           </FormControl>
         </div>
-        <div className="members-container">
-          <img
-            src={value.properties.imageSource}
-            alt={value.properties.fullName}
-          />
-          <div className="centered-text">
-            <p>
-              {value.properties.fullName} <br />
-              {value.properties.major} <br />
-              Freshman <br />
-              {value.properties.position} <br />
-            </p>
-            <a
-              href={value.properties.linkedIn}
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
-          </div>
+        <h4 className="contact-us-info3">
+          *Hover Over Each Image Below to Display Additional Information*
+        </h4>
+        <div className="members-image-wrapper">
+          {allMembers.map((element) => {
+            if (element === undefined) {
+              return <div>LOADING...</div>;
+            } else {
+              return (
+                <div className="members-container">
+                  <img
+                    src={element.imageSource}
+                    alt={element.fullName}
+                    className="members-image"
+                  />
+                  <div className="centered-text-special">
+                    <h2>{element.fullName}</h2> <br />
+                    <p>
+                      {element.grade} <br />
+                      {element.major} <br />
+                      {element.position} <br />
+                      {element.email} <br />
+                    </p>
+                    <a href={element.linkedIn} target="_blank" rel="noreferrer">
+                      LinkedIn
+                    </a>
+                  </div>
+                </div>
+              );
+            }
+          })}
         </div>
-        <div>{schoolYear}</div>
-        <div>{value.properties.firstName}</div>
         <Footer />
       </>
     );

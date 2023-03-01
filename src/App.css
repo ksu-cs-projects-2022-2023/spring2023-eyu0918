@@ -253,7 +253,8 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
-  .contact-us-image-wrapper {
+  .contact-us-image-wrapper,
+  .members-image-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -272,7 +273,8 @@
     }
   }
 
- .contact-us-image {
+ .contact-us-image,
+ .members-image {
     border: #fff;
     border-radius: 20px;
     width: 80%;
