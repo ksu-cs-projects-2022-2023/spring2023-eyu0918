@@ -162,8 +162,14 @@
     font-size: 100px;
   }
 
-  .members-container,
   .contact-us-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+  }
+
+  .members-container {
     position: relative;
     text-align: center;
     color: white;
@@ -200,6 +206,38 @@
     visibility: hidden;
     transition: visibility 0s, opacity 0.5s linear;
     -webkit-transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  .centered-text-members {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  .members-line {
+    height: 1px;
+    width: 100%;
+    background-color: beige;
+  }
+
+  .centered-text-members > h2 {
+    font-size: xx-large;
+  }
+
+  .centered-text-members > h3 {
+    font-size: medium;
+    line-height: 40px;
   }
 
   .members-container:hover > div, 
@@ -257,6 +295,7 @@
   .members-image-wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-left: 20px;
@@ -268,7 +307,8 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .contact-us-image-wrapper {
+    .contact-us-image-wrapper,
+    .members-image-wrapper {
       flex-direction: column;
     }
   }
@@ -313,9 +353,10 @@
 
   .visit-input-container,
   .apply-input-container,
-  .members-input-container {
+  .members-input-container{
     padding-top: 20px;
     padding-bottom: 40px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,6 +364,16 @@
     width: 400px;
     margin: auto;
     height: auto;
+  }
+
+  .members-search-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
 
   .apply-input-container-2 {
