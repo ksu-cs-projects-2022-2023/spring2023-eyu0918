@@ -478,7 +478,7 @@ function ApplyToday() {
         10. Please provide the names and contact information of two (2)
         non-family members or relatives who know you well and could comment on
         your potential as a student, house mate, employee, or other similar
-        role.
+        roles.
       </h2>
       <div className="apply-input-container-2">
         <h4>Reference #1</h4>

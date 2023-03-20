@@ -77,7 +77,7 @@ function Footer() {
             </Link>
           </div>
           <small className="website-rights">
-            Maitland E. Smith Scholarship House © 2020
+            Maitland E. Smith Scholarship House © 2023
           </small>
           <div className="social-icons">
             <Link
