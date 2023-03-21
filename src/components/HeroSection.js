@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import { Button } from "./Button";
 import "./HeroSection.css";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -9,20 +10,25 @@ function HeroSection() {
       <h1>SMITH SCHOLARSHIP HOUSE</h1>
       <p>Leadership - Scholarship - Fellowship</p>
       <div className="hero-btns">
-        <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-        >
-          GET STARTED
-        </Button>
-        <Button
-          className="btns"
-          buttonStyle="btn--primary"
-          buttonSize="btn--large"
-        >
-          WATCH TRAILER <i class="fa-sharp fa-solid fa-circle-play" />
-        </Button>
+        <Link to="/apply-today">
+          <Button
+            className="btns"
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+          >
+            GET STARTED
+          </Button>
+        </Link>
+
+        <Link to="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+          <Button
+            className="btns"
+            buttonStyle="btn--primary"
+            buttonSize="btn--large"
+          >
+            WATCH TRAILER <i class="fa-sharp fa-solid fa-circle-play" />
+          </Button>
+        </Link>
       </div>
     </div>
   );

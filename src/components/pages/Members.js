@@ -221,7 +221,9 @@ function Members() {
           className="members-composite-picture"
         />
         <div className="members-button">
-          <Button variant="contained">View Alumni Database</Button>
+          <Button variant="contained" href="/alumni-database">
+            View Alumni Database
+          </Button>
         </div>
         <Footer />
       </>

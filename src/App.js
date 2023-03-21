@@ -13,6 +13,7 @@ import Costs from "./components/pages/Costs";
 import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./components/pages/ContactUs";
 import ScheduleAVisit from "./components/pages/ScheduleAVisit";
+import AlumniDatabase from "./components/pages/AlumniDatabase";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/costs" element={<Costs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/schedule-a-visit" element={<ScheduleAVisit />} />
+          <Route path="/alumni-database" element={<AlumniDatabase />} />
         </Routes>
       </Router>
     </>

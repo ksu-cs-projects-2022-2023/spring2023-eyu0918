@@ -21,7 +21,8 @@
   .costs,
   .contact-us,
   .schedule-a-visit,
-  .apply-today {
+  .apply-today,
+  .alumni-database {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -462,4 +463,12 @@
     font-size: large;
     text-align: center;
     padding: 50px;
+  }
+
+  .centered-datagrid {
+    margin-left: 20%;
+  }
+
+  .fa-back-button {
+    padding-right: 10px;
   }
