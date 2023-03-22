@@ -13,6 +13,7 @@ const columns = [
   { field: "grade", headerName: "Grade", width: 150 },
   { field: "fullName", headerName: "Full Name", width: 200 },
   { field: "currentYear", headerName: "School Year", width: 150 },
+  { field: "linkedIn", headerName: "LinkedIn", width: 330 },
 ];
 
 function AlumniDatabase() {
@@ -48,6 +49,7 @@ function AlumniDatabase() {
         grade: element.grade,
         fullName: element.fullName,
         currentYear: element.currentYear,
+        linkedIn: element.linkedIn,
       });
     });
 
@@ -56,8 +58,8 @@ function AlumniDatabase() {
         <div className="centered-datagrid">
           <Box
             sx={{
-              height: 800,
-              width: "80%",
+              height: 880,
+              width: "90%",
               paddingTop: "50px",
               paddingBottom: "50px",
             }}
@@ -68,11 +70,11 @@ function AlumniDatabase() {
               initialState={{
                 pagination: {
                   paginationModel: {
-                    pageSize: 20,
+                    pageSize: 15,
                   },
                 },
               }}
-              pageSizeOptions={[5, 10, 20]}
+              pageSizeOptions={[5, 10, 15, 20]}
               checkboxSelection
               disableRowSelectionOnClick
             />
