@@ -22,6 +22,7 @@
   .contact-us,
   .schedule-a-visit,
   .apply-today,
+  .donate,
   .alumni-database {
     display: flex;
     height: 90vh;
@@ -351,7 +352,8 @@
 
   .visit-input-container,
   .apply-input-container,
-  .members-input-container{
+  .members-input-container,
+  .donate-input-container{
     padding-top: 20px;
     padding-bottom: 40px;
     gap: 10px;
@@ -471,4 +473,14 @@
 
   .fa-back-button {
     padding-right: 10px;
+  }
+
+  .donate {
+    background-image: url('/public/images/donate.jpg');
+    background-position-x: 50%;
+    background-position-y: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
   }
