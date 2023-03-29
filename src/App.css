@@ -31,6 +31,12 @@
     font-size: 3rem;
   }
 
+  .success {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    padding-top: 50px;
+  }
+
   .about {
     background-image: url('/public/images/about.jpg');
     background-position: center;
