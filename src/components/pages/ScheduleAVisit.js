@@ -133,10 +133,6 @@ function ScheduleAVisit() {
   };
 
   const handleSnackClose = (event, reason) => {
-    if (reason === "clickaway") {
-      setOpenSnack(false);
-    }
-
     setOpen(false);
     setOpenSnack(false);
     setOpenErrorSnack(false);
@@ -211,7 +207,9 @@ function ScheduleAVisit() {
         <br />
 
         <FormControl sx={{ m: 1, width: 300 }}>
-          <InputLabel id="visit-time-label">Available Visit Time</InputLabel>
+          <InputLabel id="visit-time-label">
+            Available Visit Time (CT)
+          </InputLabel>
           <Select
             labelId="visit-time-label"
             id="visit-time-checkbox"

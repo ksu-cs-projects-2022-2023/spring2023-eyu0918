@@ -17,7 +17,16 @@ function ContactUs() {
   let executiveDirector;
 
   if (first === undefined || records === undefined) {
-    return <div>LOADING...</div>;
+    return (
+      <>
+        <h1 className="contact-us">CONTACT US</h1>
+        <div className="loading-screen">
+          <i class="fa-solid fa-spinner"></i>
+          &nbsp;&nbsp;LOADING...
+        </div>
+        <Footer />
+      </>
+    );
   } else {
     executiveDirector = first.get("e").properties;
     recruitingAndPresident = records.map((x) => x.get("p").properties);
@@ -43,7 +52,16 @@ function ContactUs() {
         <div className="contact-us-image-wrapper">
           {recruitingAndPresident.map((element) => {
             if (element === undefined) {
-              return <div>LOADING...</div>;
+              return (
+                <>
+                  <h1 className="contact-us">CONTACT US</h1>
+                  <div className="loading-screen">
+                    <i class="fa-solid fa-spinner"></i>
+                    &nbsp;&nbsp;LOADING...
+                  </div>
+                  <Footer />
+                </>
+              );
             } else {
               return (
                 <div className="contact-us-container">

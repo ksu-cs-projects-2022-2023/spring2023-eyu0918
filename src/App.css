@@ -490,3 +490,7 @@
     color: #fff;
     font-size: 100px;
   }
+
+  .fa-lock {
+    padding-right: 10px;
+  }

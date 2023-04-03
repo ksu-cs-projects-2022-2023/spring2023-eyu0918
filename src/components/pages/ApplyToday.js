@@ -206,10 +206,6 @@ function ApplyToday() {
   };
 
   const handleSnackClose = (event, reason) => {
-    if (reason === "clickaway") {
-      setOpenSnack(false);
-    }
-
     setOpen(false);
     setOpenSnack(false);
     setOpenErrorSnack(false);

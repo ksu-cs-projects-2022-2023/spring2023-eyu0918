@@ -75,23 +75,18 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/donate"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Donate
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/apply-today"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                APPLY TODAY
+                DONATE
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">APPLY TODAY</Button>}
+          {button && (
+            <Link to="/donate">
+              <Button buttonStyle="btn--outline">DONATE</Button>
+            </Link>
+          )}
         </div>
       </nav>
     </>

@@ -4,33 +4,45 @@ import Footer from "../Footer";
 import { Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
+import MuiAlert from "@mui/material/Alert";
+import Snackbar from "@mui/material/Snackbar";
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 function Donate() {
-  const [amount, setAmount] = useState("");
+  const [amount, setAmount] = useState(0.0);
+  const [openErrorSnack, setOpenErrorSnack] = useState(false);
+
+  const handleSnackClose = () => {
+    setOpenErrorSnack(false);
+  };
 
   const handleDonate = () => {
-    fetch("http://localhost:3000/create-checkout-session", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        items: [
-          { id: 1, quantity: 3 },
-          { id: 2, quantity: 1 },
-        ],
-      }),
-    })
-      .then((res) => {
-        if (res.ok) return res.json();
-        return res.json().then((json) => Promise.reject(json));
+    if (amount < 0.5 || amount > 999999999) {
+      setOpenErrorSnack(true);
+    } else {
+      fetch("http://localhost:3000/create-checkout-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          items: [{ id: 1, price: amount }],
+        }),
       })
-      .then(({ url }) => {
-        window.location = url;
-      })
-      .catch((e) => {
-        console.error(e.error);
-      });
+        .then((res) => {
+          if (res.ok) return res.json();
+          return res.json().then((json) => Promise.reject(json));
+        })
+        .then(({ url }) => {
+          window.location = url;
+        })
+        .catch((e) => {
+          console.error(e.error);
+        });
+    }
   };
 
   return (
@@ -50,9 +62,22 @@ function Donate() {
           onChange={(e) => setAmount(e.target.value)}
         />
         <Button variant="contained" onClick={handleDonate}>
-          Donate ${amount}
+          <i class="fa-solid fa-lock"></i> Donate ${amount}
         </Button>
       </div>
+      <Snackbar
+        open={openErrorSnack}
+        autoHideDuration={6000}
+        onClose={handleSnackClose}
+      >
+        <Alert
+          onClose={handleSnackClose}
+          severity="error"
+          sx={{ width: "100%" }}
+        >
+          Invalid Donation Amount! Please Try Again With a Different Number.
+        </Alert>
+      </Snackbar>
       <Footer />
     </>
   );

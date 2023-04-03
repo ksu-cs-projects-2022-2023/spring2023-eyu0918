@@ -14,7 +14,9 @@ function Footer() {
           Apply Today to Begin a Brand New Adventure
         </p>
         <div className="apply-button">
-          <Button buttonSize="btn--outline">Apply Today</Button>
+          <Link to="/apply-today">
+            <Button buttonSize="btn--outline">APPLY TODAY</Button>
+          </Link>
         </div>
       </section>
       <div className="footer-links">
