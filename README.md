@@ -1,5 +1,5 @@
 # Eric Yu CIS598 Senior Project
-## Smith Scholarship House Website
+## New Smith Scholarship House Website
 ### Advisor: Dr. Lior Shamir
 
 ### Overview
