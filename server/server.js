@@ -12,7 +12,7 @@ app.use(
 
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
-const storeItems = new Map([[1, { name: "Donation Total" }]]);
+const donationItem = new Map([[1, { name: "Donation Total" }]]);
 
 app.post("/create-checkout-session", async (req, res) => {
   try {
@@ -20,13 +20,13 @@ app.post("/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       mode: "payment",
       line_items: req.body.items.map((item) => {
-        const storeItem = storeItems.get(item.id);
+        const donationInfo = donationItem.get(item.id);
         const donationPrice = item.price * 100;
         return {
           price_data: {
             currency: "usd",
             product_data: {
-              name: storeItem.name,
+              name: donationInfo.name,
             },
             unit_amount: donationPrice,
           },

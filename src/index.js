@@ -4,12 +4,13 @@ import App from "./App";
 import { Neo4jProvider, createDriver } from "use-neo4j";
 
 const driver = createDriver(
-  "neo4j",
-  "localhost",
-  7687,
-  "neo4j",
-  "whoisjack123"
+  "neo4j", // scheme
+  "localhost", // host
+  7687, // port
+  "neo4j", // username
+  "whoisjack123" // password
 );
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(

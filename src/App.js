@@ -16,6 +16,7 @@ import ScheduleAVisit from "./components/pages/ScheduleAVisit";
 import Donate from "./components/pages/Donate";
 import AlumniDatabase from "./components/pages/AlumniDatabase";
 import Success from "./components/pages/Success";
+import PayRent from "./components/pages/PayRent";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/donate" element={<Donate />} />
           <Route path="/alumni-database" element={<AlumniDatabase />} />
           <Route path="/success" element={<Success />} />
+          <Route path="/pay-rent" element={<PayRent />} />
         </Routes>
       </Router>
     </>

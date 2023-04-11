@@ -11,6 +11,11 @@
     width: 80%;
     margin: auto;
   }
+
+  .clean-link {
+    text-decoration: none;
+    color: white;
+  }
   
   .home,
   .about,
