@@ -6,7 +6,7 @@ function Success() {
   return (
     <>
       <h1 className="success">
-        Payment successful! Thank you for your generosity & support!
+        Donation successful! Thank you for your generosity & support!
       </h1>
       <img
         className="activities-image"

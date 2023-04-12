@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "./Button";
 import Fab from "@mui/material/Fab";
 import IconButton from "@mui/material/IconButton";
@@ -39,13 +40,14 @@ function Footer() {
     setOpen(true);
   };
 
+  const navigate = useNavigate();
   const handleAuthentication = () => {
-    console.log(secret);
     if (secret !== "whoisjack123") {
       setOpenSnack(true);
       setOpen(true);
     } else {
       setOpen(false);
+      navigate("/secret-page");
     }
   };
 
@@ -190,14 +192,14 @@ function Footer() {
               SMITH <i class="fa-solid fa-house-user" />
             </Link>
           </div>
-          <small className="website-rights">
-            <Link
+          <small className="website-rights" onClick={handleSecretPageClick}>
+            {/* <Link
               onClick={handleSecretPageClick}
-              to="/pay-rent"
+              to="/secret-page"
               className="clean-link"
-            >
-              Maitland E. Smith Scholarship House © 2023
-            </Link>
+            > */}
+            Maitland E. Smith Scholarship House © 2023
+            {/* </Link> */}
           </small>
           <div className="social-icons">
             <Link

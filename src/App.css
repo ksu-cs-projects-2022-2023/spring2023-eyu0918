@@ -28,14 +28,15 @@
   .schedule-a-visit,
   .apply-today,
   .donate,
-  .alumni-database {
+  .alumni-database,
+  .secret-page {
     display: flex;
     height: 90vh;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
   }
-
+ 
   .success {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: xx-large;
@@ -364,7 +365,8 @@
   .visit-input-container,
   .apply-input-container,
   .members-input-container,
-  .donate-input-container{
+  .donate-input-container,
+  .secret-page-input-container{
     padding-top: 20px;
     padding-bottom: 40px;
     gap: 10px;
@@ -488,8 +490,8 @@
 
   .donate {
     background-image: url('/public/images/donate.jpg');
-    background-position-x: 50%;
-    background-position-y: 25%;
+    background-position-x: 60%;
+    background-position-y: 45%;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -498,4 +500,14 @@
 
   .fa-lock {
     padding-right: 10px;
+  }
+
+  .secret-page {
+    background-image: url('/public/images/secret-page.jpg');
+    background-position-x: 50%;
+    background-position-y: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
   }

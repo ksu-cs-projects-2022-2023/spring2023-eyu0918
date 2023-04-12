@@ -11,7 +11,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-function Donate() {
+function SecretPage() {
   const [amount, setAmount] = useState(0.0);
   const [openErrorSnack, setOpenErrorSnack] = useState(false);
 
@@ -47,8 +47,8 @@ function Donate() {
 
   return (
     <>
-      <div className="donate">DONATE</div>
-      <div className="donate-input-container">
+      <div className="secret-page">SECRET PAGE</div>
+      <div className="secret-page-input-container">
         <TextField
           fullWidth
           label="Enter Amount:"
@@ -61,7 +61,7 @@ function Donate() {
           onChange={(e) => setAmount(e.target.value)}
         />
         <Button variant="contained" onClick={handleDonate}>
-          <i class="fa-solid fa-lock"></i> Donate ${amount}
+          <i class="fa-solid fa-lock"></i> PAY ${amount}
         </Button>
       </div>
       <Snackbar
@@ -74,7 +74,7 @@ function Donate() {
           severity="error"
           sx={{ width: "100%" }}
         >
-          Invalid Donation Amount! Please Try Again With a Different Number.
+          Invalid Amount! Please Try Again With a Different Number.
         </Alert>
       </Snackbar>
       <Footer />
@@ -82,4 +82,4 @@ function Donate() {
   );
 }
 
-export default Donate;
+export default SecretPage;
