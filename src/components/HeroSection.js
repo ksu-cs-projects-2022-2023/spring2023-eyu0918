@@ -20,7 +20,7 @@ function HeroSection() {
           </Button>
         </Link>
 
-        <Link to="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+        <Link to="https://www.youtube.com/watch?v=MUpKhoQltCg" target="_blank">
           <Button
             className="btns"
             buttonStyle="btn--primary"
