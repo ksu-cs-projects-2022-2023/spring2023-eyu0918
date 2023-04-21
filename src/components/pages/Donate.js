@@ -77,12 +77,12 @@ function Donate() {
     <>
       <div className="donate">DONATE</div>
       <h1 className="donate-info">
-        The entirety of Smith Scholarship House thank you for your kindness
-        donations.
+        The Entirety Of Smith Scholarship House Thank You For Your Act of
+        Kindness.
       </h1>
       <h3 className="donate-info">
-        To Begin, enter in the amount you would like to donate (Minumum of $5).{" "}
-        <br />
+        To Begin, enter in the amount you would like to donate (Minumum of
+        $5.00). <br />
         Then, click the <b>DONATE</b> button and follow the steps on your screen
         to complete the process.
       </h3>
