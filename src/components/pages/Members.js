@@ -109,7 +109,12 @@ function Members() {
                     {element.email} <hr className="members-line" />
                   </h3>
                   <h3>
-                    <a href={element.linkedIn} target="_blank" rel="noreferrer">
+                    <a
+                      href={element.linkedIn}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="clean-link"
+                    >
                       LinkedIn
                     </a>
                     <hr className="members-line" />
@@ -141,7 +146,12 @@ function Members() {
                     {element.email} <hr className="members-line" />
                   </h3>
                   <h3>
-                    <a href={element.linkedIn} target="_blank" rel="noreferrer">
+                    <a
+                      href={element.linkedIn}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="clean-link"
+                    >
                       LinkedIn
                     </a>
                     <hr className="members-line" />
@@ -173,7 +183,12 @@ function Members() {
                     {element.email} <hr className="members-line" />
                   </h3>
                   <h3>
-                    <a href={element.linkedIn} target="_blank" rel="noreferrer">
+                    <a
+                      href={element.linkedIn}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="clean-link"
+                    >
                       LinkedIn
                     </a>
                     <hr className="members-line" />
@@ -205,7 +220,12 @@ function Members() {
                     {element.email} <hr className="members-line" />
                   </h3>
                   <h3>
-                    <a href={element.linkedIn} target="_blank" rel="noreferrer">
+                    <a
+                      href={element.linkedIn}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="clean-link"
+                    >
                       LinkedIn
                     </a>
                     <hr className="members-line" />
