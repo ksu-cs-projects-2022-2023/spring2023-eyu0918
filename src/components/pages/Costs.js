@@ -41,25 +41,25 @@ function Costs() {
           <ul className="cards__items">
             <CardItem
               src="images/about.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Back to the About Page."
               label="ABOUT"
               path="/about"
             />
             <CardItem
               src="images/values.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Understand the Three Core Values of Smith House."
               label="VALUES"
               path="/values"
             />
             <CardItem
               src="images/operations.JPG"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Find Out the House's Daily Operations."
               label="OPERATIONS"
               path="/operations"
             />
             <CardItem
               src="images/activities.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Enjoy the Extracurricular Activities with Peers."
               label="ACTIVITIES"
               path="/activities"
             />

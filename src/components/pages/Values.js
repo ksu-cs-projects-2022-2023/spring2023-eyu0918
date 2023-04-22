@@ -49,25 +49,25 @@ function Values() {
           <ul className="cards__items">
             <CardItem
               src="images/about.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Back to the About Page."
               label="ABOUT"
               path="/about"
             />
             <CardItem
               src="images/operations.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Find Out the House's Daily Operations."
               label="OPERATIONS"
               path="/operations"
             />
             <CardItem
               src="images/activities.JPG"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Enjoy the Extracurricular Activities with Peers."
               label="ACTIVITIES"
               path="/activities"
             />
             <CardItem
               src="images/costs.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Learn More About the Affordability of Cooperative Living."
               label="COSTS"
               path="/costs"
             />

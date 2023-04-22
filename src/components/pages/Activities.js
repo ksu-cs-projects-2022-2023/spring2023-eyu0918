@@ -111,25 +111,25 @@ function Activities() {
           <ul className="cards__items">
             <CardItem
               src="images/about.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Back to the About Page."
               label="ABOUT"
               path="/about"
             />
             <CardItem
               src="images/values.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Understand the Three Core Values of Smith House."
               label="VALUES"
               path="/values"
             />
             <CardItem
               src="images/operations.JPG"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Find Out the House's Daily Operations."
               label="OPERATIONS"
               path="/operations"
             />
             <CardItem
               src="images/costs.jpg"
-              text="Explore the hidden waterfall deep inside the Amazon Jungle"
+              text="Learn More About the Affordability of Cooperative Living."
               label="COSTS"
               path="/costs"
             />
