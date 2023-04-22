@@ -4,8 +4,8 @@ import App from "./App";
 import { Neo4jProvider, createDriver } from "use-neo4j";
 
 const driver = createDriver(
-  "neo4j", // scheme
-  "localhost", // host
+  "neo4j+s", // scheme
+  "45bb78bb.databases.neo4j.io", // host
   7687, // port
   "neo4j", // username
   "whoisjack123" // password
