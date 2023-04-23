@@ -5,6 +5,7 @@ import "../../App.css";
 import Footer from "../Footer";
 import { useReadCypher } from "use-neo4j/dist/cypher";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const columns = [
   { field: "firstName", headerName: "First Name", width: 150 },
@@ -81,8 +82,11 @@ function AlumniDatabase() {
           </Box>
         </div>
         <div className="members-button">
-          <Button variant="contained" href="/members">
-            <i class="fa-solid fa-angles-left fa-back-button"></i> Back
+          <Button variant="contained">
+            <i class="fa-solid fa-angles-left fa-back-button"></i>
+            <Link to="/members" className="clean-link">
+              Back
+            </Link>
           </Button>
         </div>
         <Footer />
