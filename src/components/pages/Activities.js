@@ -48,7 +48,7 @@ function Activities() {
         Ultimate Frisbee, or throwing a football or baseball around.
       </h2>
       <h2 className="operations-info">
-        The entry fees for intramural activities are included each resident's
+        The entry fees for intramural activities are included in each resident's
         rent payment. The Intramural Chairman informs the Smith House teams of
         upcoming deadlines at the Peters Recreation Center, posts team schedules
         and standings, and orders the annual intramural t-shirts. He also has a

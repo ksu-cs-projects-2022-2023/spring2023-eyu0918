@@ -13,7 +13,7 @@ function About() {
         south of the K-State campus, provides an affordable living environment
         for male college students. Smith House has a self-sustaining,
         cooperative living environment. Each house member contributes to the
-        organization through a weekly set of resposibilties.
+        organization through a weekly set of responsibilties.
       </h2>
       <img
         className="about-image"

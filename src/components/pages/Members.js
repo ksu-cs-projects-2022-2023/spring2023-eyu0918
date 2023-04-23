@@ -3,6 +3,7 @@ import "../../App.css";
 import Footer from "../Footer";
 import { Button } from "@mui/material";
 import { useReadCypher } from "use-neo4j/dist/cypher";
+import { Link } from "react-router-dom";
 
 function RunAllMembersQuery(inputSchoolYear) {
   const allMembersQuery = `MATCH (p:Person) -[:MEMBER_OF]-> (y:Year {schoolYear: $schoolYear}) RETURN p`;
@@ -241,8 +242,10 @@ function Members() {
           className="members-composite-picture"
         />
         <div className="members-button">
-          <Button variant="contained" href="/alumni-database">
-            View Alumni Database
+          <Button variant="contained">
+            <Link to="/alumni-database" className="clean-link">
+              View Alumni Database
+            </Link>
           </Button>
         </div>
         <Footer />
