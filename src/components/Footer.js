@@ -27,6 +27,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 function Footer() {
   const [secret, setSecret] = useState("");
   const [open, setOpen] = useState(false);
+  const [openOnPage, setOpenOnPage] = useState(false);
   const [openSnack, setOpenSnack] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -37,12 +38,18 @@ function Footer() {
   };
 
   const handleSecretPageClick = () => {
-    setOpen(true);
+    if (window.location.pathname === "/secret-page") {
+      setOpenOnPage(true);
+    } else {
+      setOpen(true);
+    }
   };
+
+  //console.log(window.location.pathname);
 
   const navigate = useNavigate();
   const handleAuthentication = () => {
-    if (secret !== "whoisjack123") {
+    if (secret !== "whoisjack123" && secret !== "Whoisjack123") {
       setOpenSnack(true);
       setOpen(true);
     } else {
@@ -53,6 +60,7 @@ function Footer() {
 
   const handleClose = () => {
     setOpen(false);
+    setOpenOnPage(false);
   };
 
   const handleSnackClose = () => {
@@ -185,6 +193,33 @@ function Footer() {
         </Alert>
       </Snackbar>
 
+      <Dialog open={openOnPage} onClose={handleClose}>
+        <DialogTitle>Smith House Pre-Formal Dinner Song</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            <p style={{ fontFamily: "cursive" }}>
+              Be Present At Our Table Lord, <br />
+              Be Here And Everywhere. <br />
+              Thy Mercy's Blessing Grant That We, <br />
+              May Feast In Fellowship With Thee. <br />
+              Amen. <br /> <br />
+            </p>
+          </DialogContentText>
+          <DialogActions>
+            <Fab
+              variant="extended"
+              size="medium"
+              color="primary"
+              aria-label="add"
+              onClick={handleClose}
+            >
+              <CheckIcon sx={{ mr: 1 }} />
+              Close
+            </Fab>
+          </DialogActions>
+        </DialogContent>
+      </Dialog>
+
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
@@ -193,13 +228,7 @@ function Footer() {
             </Link>
           </div>
           <small className="website-rights" onClick={handleSecretPageClick}>
-            {/* <Link
-              onClick={handleSecretPageClick}
-              to="/secret-page"
-              className="clean-link"
-            > */}
             Maitland E. Smith Scholarship House © 2023
-            {/* </Link> */}
           </small>
           <div className="social-icons">
             <Link
