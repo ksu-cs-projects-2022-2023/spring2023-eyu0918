@@ -30,7 +30,7 @@ function Activities() {
       </h2>
       <img
         className="activities-image"
-        src="images/dance.jpg"
+        src="images/activities-1.jpg"
         alt="Ballroom Dancing"
       />
 
@@ -57,7 +57,7 @@ function Activities() {
       </h2>
       <img
         className="activities-image"
-        src="images/frisbee.jpg"
+        src="images/activities-2.jpg"
         alt="frisbee"
       />
 
@@ -80,7 +80,7 @@ function Activities() {
       </h2>
       <img
         className="activities-image-special"
-        src="images/Halloween.jpg"
+        src="images/activities-3.jpg"
         alt="Halloween"
       />
 
@@ -102,7 +102,11 @@ function Activities() {
         colleges, cultural experts, and university/community leaders are some of
         the guests you could meet.
       </h2>
-      <img className="activities-image" src="images/museum.jpg" alt="museum" />
+      <img
+        className="activities-image"
+        src="images/activities-4.jpg"
+        alt="museum"
+      />
 
       <hr />
 

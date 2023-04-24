@@ -31,7 +31,7 @@ function Operations() {
       </h2>
       <img
         className="operations-image-special"
-        src="images/rizzler.jpg"
+        src="images/operations-1.jpg"
         alt="The Rizzler"
       />
 
@@ -56,7 +56,7 @@ function Operations() {
       </h2>
       <img
         className="operations-image"
-        src="images/cooking.jpg"
+        src="images/operations-2.jpg"
         alt="Let Him Cook"
       />
 
