@@ -8,13 +8,12 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const columns = [
-  { field: "firstName", headerName: "First Name", width: 150 },
-  { field: "lastName", headerName: "Last Name", width: 150 },
-  { field: "major", headerName: "Major", width: 300 },
-  { field: "grade", headerName: "Grade", width: 150 },
   { field: "fullName", headerName: "Full Name", width: 200 },
+  { field: "major", headerName: "Major", width: 325 },
+  { field: "grade", headerName: "Grade", width: 150 },
+  { field: "phone", headerName: "Phone Number", width: 200 },
   { field: "currentYear", headerName: "School Year", width: 150 },
-  { field: "linkedIn", headerName: "LinkedIn", width: 330 },
+  { field: "linkedIn", headerName: "LinkedIn", width: 350 },
 ];
 
 function AlumniDatabase() {
@@ -44,11 +43,10 @@ function AlumniDatabase() {
 
       Rows.push({
         id: idNum,
-        firstName: element.firstName,
-        lastName: element.lastName,
+        fullName: element.fullName,
         major: element.major,
         grade: element.grade,
-        fullName: element.fullName,
+        phone: element.phone,
         currentYear: element.currentYear,
         linkedIn: element.linkedIn,
       });
