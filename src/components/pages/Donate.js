@@ -51,7 +51,7 @@ function Donate() {
     if (amount < 0.5 || amount > 999999999) {
       setOpenErrorSnack(true);
     } else {
-      fetch("http://70.168.127.133/create-checkout-session", {
+      fetch("http://localhost:3000/create-checkout-session", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
