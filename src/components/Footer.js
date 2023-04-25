@@ -199,8 +199,8 @@ function Footer() {
           <DialogContentText>
             <p style={{ fontFamily: "cursive" }}>
               Be Present At Our Table Lord, <br />
-              Be Here And Everywhere. <br />
-              Thy Mercy's Blessing Grant That We, <br />
+              Be Here And Everywhere Adore. <br />
+              Thy Mercy's Bless And Grant That We, <br />
               May Feast In Fellowship With Thee. <br />
               Amen. <br /> <br />
             </p>
