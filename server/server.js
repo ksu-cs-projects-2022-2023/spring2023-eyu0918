@@ -6,7 +6,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(
   cors({
-    origin: "www.smithscholarshiphouse.org",
+    origin: "https://smithscholarshiphouse.org",
   })
 );
 
@@ -42,4 +42,4 @@ app.post("/create-checkout-session", async (req, res) => {
   }
 });
 
-app.listen(3000);
+app.listen();
