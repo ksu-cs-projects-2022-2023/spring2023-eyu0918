@@ -133,7 +133,7 @@ function Donate() {
       </div>
       <Snackbar
         open={openErrorSnack}
-        autoHideDuration={6000}
+        autoHideDuration={5000}
         onClose={handleSnackClose}
       >
         <Alert
