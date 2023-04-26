@@ -282,7 +282,7 @@ function ScheduleAVisit() {
         </Dialog>
         <Snackbar
           open={openSnack}
-          autoHideDuration={6000}
+          autoHideDuration={5000}
           onClose={handleSnackClose}
         >
           <Alert
@@ -295,7 +295,7 @@ function ScheduleAVisit() {
         </Snackbar>
         <Snackbar
           open={openErrorSnack}
-          autoHideDuration={6000}
+          autoHideDuration={5000}
           onClose={handleSnackClose}
         >
           <Alert

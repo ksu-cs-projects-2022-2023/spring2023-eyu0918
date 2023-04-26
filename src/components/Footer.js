@@ -45,11 +45,9 @@ function Footer() {
     }
   };
 
-  //console.log(window.location.pathname);
-
   const navigate = useNavigate();
   const handleAuthentication = () => {
-    if (secret !== "whoisjack123" && secret !== "Whoisjack123") {
+    if (secret.toLowerCase() !== "whoisjack123") {
       setOpenSnack(true);
       setOpen(true);
     } else {
@@ -181,7 +179,7 @@ function Footer() {
       </Dialog>
       <Snackbar
         open={openSnack}
-        autoHideDuration={6000}
+        autoHideDuration={5000}
         onClose={handleSnackClose}
       >
         <Alert
