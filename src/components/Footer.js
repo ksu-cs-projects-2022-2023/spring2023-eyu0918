@@ -264,7 +264,7 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link linkedin"
-              to="https://www.linkedin.com/in/eric-yu-346762196/"
+              to="https://www.linkedin.com/groups/14249255/"
               target="_blank"
               aria-label="LinkedIn"
             >
