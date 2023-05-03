@@ -40,7 +40,7 @@ function Donate() {
         <Button variant="contained" fullWidth>
           <Link
             className="clean-link"
-            to="https://buy.stripe.com/00geYd3kq5Qw4pi6oo"
+            to="https://buy.stripe.com/bIY3fv9IOa6M7BudQR"
             target="_blank"
           >
             <i class="fa-solid fa-lock"></i> Donate
