@@ -368,7 +368,7 @@
   .donate-input-container,
   .secret-page-input-container{
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     gap: 10px;
     display: flex;
     flex-direction: column;
