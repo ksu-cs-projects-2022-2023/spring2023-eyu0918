@@ -5,10 +5,10 @@ import { Neo4jProvider, createDriver } from "use-neo4j";
 
 const driver = createDriver(
   "neo4j+s", // scheme
-  "45bb78bb.databases.neo4j.io", // host
+  "d33df59b.databases.neo4j.io:7687", // host
   7687, // port
   "neo4j", // username
-  "whoisjack123" // password
+  "Whoisjack123!" // password
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
