@@ -415,7 +415,13 @@
   .members-button {
     display: flex;
     justify-content: center;
+  }
+
+  .members-add-button {
+    display: flex;
+    justify-content: right;
     padding-bottom: 30px;
+    padding-right: 20px;
   }
 
   .apply-input-container-2 {
