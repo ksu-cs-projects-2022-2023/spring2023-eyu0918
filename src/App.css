@@ -417,6 +417,12 @@
     justify-content: center;
   }
 
+  .alumni-database-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
   .members-add-button {
     display: flex;
     justify-content: right;

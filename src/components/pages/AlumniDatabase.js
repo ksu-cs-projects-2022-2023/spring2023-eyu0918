@@ -79,7 +79,7 @@ function AlumniDatabase() {
             />
           </Box>
         </div>
-        <div className="members-button">
+        <div className="alumni-database-button">
           <Button variant="contained">
             <i class="fa-solid fa-angles-left fa-back-button"></i>
             <Link to="/members" className="clean-link">
