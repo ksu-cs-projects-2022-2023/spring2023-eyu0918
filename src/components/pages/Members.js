@@ -323,7 +323,7 @@ function Members() {
       <>
         <h1 className="members">MEMBERS</h1>
         <h1 className="members-header">
-          2022-2023 Smith Scholarship House Members
+          {schoolYear} Smith Scholarship House Members
         </h1>
         <h4 className="contact-us-info3">
           *Hover Over Each Image Below to Display Additional Information*
