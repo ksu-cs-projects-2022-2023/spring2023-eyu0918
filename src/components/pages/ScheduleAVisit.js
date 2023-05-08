@@ -152,7 +152,7 @@ function ScheduleAVisit() {
         <TextField
           fullWidth
           required
-          label="Name"
+          label="Full Name"
           variant="filled"
           margin="normal"
           value={nameValue}
@@ -182,6 +182,7 @@ function ScheduleAVisit() {
           label="Phone Number"
           variant="filled"
           margin="normal"
+          placeholder="xxx-xxx-xxxx"
           value={phoneValue}
           onChange={(e) => setPhoneValue(e.target.value)}
         />

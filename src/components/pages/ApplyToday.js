@@ -246,7 +246,7 @@ function ApplyToday() {
         <TextField
           required
           fullWidth
-          label="Name"
+          label="Full Name"
           variant="filled"
           margin="normal"
           value={nameValue}
@@ -316,6 +316,7 @@ function ApplyToday() {
           label="Phone Number"
           variant="filled"
           margin="normal"
+          placeholder="xxx-xxx-xxxx"
           value={phoneValue}
           onChange={(e) => setPhoneValue(e.target.value)}
         />
@@ -334,6 +335,7 @@ function ApplyToday() {
           label="Date of Birth"
           variant="filled"
           margin="normal"
+          placeholder="mm/dd/yyyy"
           value={birthValue}
           onChange={(e) => setBirthValue(e.target.value)}
         />
@@ -484,7 +486,7 @@ function ApplyToday() {
           variant="filled"
           value={reference1NameValue}
           onChange={(e) => setReference1NameValue(e.target.value)}
-          label="Name"
+          label="Full Name"
         ></TextField>
       </div>
       <div className="apply-input-container-2">
@@ -504,7 +506,8 @@ function ApplyToday() {
           variant="filled"
           value={reference1PhoneValue}
           onChange={(e) => setReference1PhoneValue(e.target.value)}
-          label="Phone #"
+          label="Phone Number"
+          placeholder="xxx-xxx-xxxx"
         ></TextField>
       </div>
       <div className="apply-input-container-2">
@@ -538,7 +541,7 @@ function ApplyToday() {
           variant="filled"
           value={reference2NameValue}
           onChange={(e) => setReference2NameValue(e.target.value)}
-          label="Name"
+          label="Full Name"
         ></TextField>
       </div>
       <div className="apply-input-container-2">
@@ -558,7 +561,8 @@ function ApplyToday() {
           variant="filled"
           value={reference2PhoneValue}
           onChange={(e) => setReference2PhoneValue(e.target.value)}
-          label="Phone #"
+          label="Phone Number"
+          placeholder="xxx-xxx-xxxx"
         ></TextField>
       </div>
       <div className="apply-input-container-2">
@@ -636,6 +640,7 @@ function ApplyToday() {
           label="Date"
           variant="filled"
           margin="normal"
+          placeholder="mm/dd/yyyy"
           value={dateValue}
           onChange={(e) => setDateValue(e.target.value)}
         />
