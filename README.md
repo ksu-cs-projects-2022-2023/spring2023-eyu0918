@@ -2,6 +2,8 @@
 ## New Smith Scholarship House Website
 ### Advisor: Dr. Lior Shamir
 
+### To Access the Website, go to www.smithscholarshiphouse.org.
+
 ### Overview
 The Maitland E. Smith Scholarship House is the place I have been living at for the past 3 and half years of my college career. Currently, the house does have a website (www.smithscholarshiphouse.org), however, it is quite simple and only has a few pages that contain images and paragraphs. In my opinion, there are some great improvements that can be made, both appearance wise and functionality wise. 
 
