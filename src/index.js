@@ -5,7 +5,7 @@ import { Neo4jProvider, createDriver } from "use-neo4j";
 
 const driver = createDriver(
   "neo4j+s", // scheme
-  "d33df59b.databases.neo4j.io:7687", // host
+  "ed1fd98a.databases.neo4j.io", // host
   7687, // port
   "neo4j", // username
   "Whoisjack123!" // password

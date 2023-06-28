@@ -6,7 +6,7 @@ import { useReadCypher } from "use-neo4j/dist/cypher";
 function ContactUs() {
   const currentSchoolYear = "2022-2023";
 
-  const recruitingAndPresidentQuery = `MATCH (p:Person) -[:MEMBER_OF]-> (y:Year {schoolYear: $schoolYear}) WHERE p.position = "Recruiting Chair" OR p.position = "President" RETURN p`;
+  const recruitingAndPresidentQuery = `MATCH (p:Person) -[:MEMBER_OF]-> (y:Year {schoolYear: $schoolYear}) WHERE p.position CONTAINS "Recruiting Chair" OR p.position = "President" RETURN p`;
   const execDirectorQuery = `MATCH (e:ED) -[:MEMBER_OF]-> (y:Year {schoolYear: $schoolYear}) RETURN e`;
   const params = { schoolYear: currentSchoolYear };
 

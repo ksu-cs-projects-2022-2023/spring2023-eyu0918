@@ -166,7 +166,7 @@ function Members() {
   const CreateNewMember = async () => {
     const neo4j = require("neo4j-driver");
 
-    const uri = "neo4j+s://d33df59b.databases.neo4j.io";
+    const uri = "neo4j+s://ed1fd98a.databases.neo4j.io";
     const user = "neo4j";
     const password = "Whoisjack123!";
 
