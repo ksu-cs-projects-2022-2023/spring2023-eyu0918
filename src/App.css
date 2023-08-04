@@ -416,6 +416,12 @@
     display: flex;
     justify-content: center;
   }
+  
+  .members-school-year-dropdown {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
 
   .alumni-database-button {
     display: flex;
