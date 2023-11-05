@@ -644,7 +644,7 @@ function Members() {
               label="Full Name (First & Last): "
               variant="filled"
               margin="normal"
-              value={fullName}
+              value={firstName + " " + lastName}
               onChange={(e) => setFullName(e.target.value)}
             />
             <br />
