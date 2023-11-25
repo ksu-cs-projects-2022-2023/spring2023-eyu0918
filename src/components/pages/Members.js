@@ -81,9 +81,9 @@ function RunExecutiveDirectorQuery(inputSchoolYear) {
 }
 
 function Members() {
-  //let schoolYear = "2022-2023";
+  let schoolYear = "2022-2023";
 
-  const [schoolYear, setSchoolYear] = useState("2022-2023");
+  //const [schoolYear, setSchoolYear] = useState("2022-2023");
 
   const [open, setOpen] = useState(false);
   const [openCreate, setOpenCreate] = useState(false);
