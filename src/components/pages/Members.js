@@ -94,8 +94,8 @@ function Members() {
   const [showPassword, setShowPassword] = useState(false);
 
   const [currentYear, setCurrentYear] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  //const [firstName, setFirstName] = useState("");
+  //const [lastName, setLastName] = useState("");
   const [fullName, setFullName] = useState("");
   const [grade, setGrade] = useState("");
   const [major, setMajor] = useState("");
@@ -131,14 +131,15 @@ function Members() {
   const handleCreateNewMember = () => {
     if (
       currentYear === "" ||
-      firstName === "" ||
-      lastName === "" ||
+      //firstName === "" ||
+      //lastName === "" ||
       fullName === "" ||
       grade === "" ||
       major === "" ||
       phone === "" ||
       email === ""
     ) {
+      console.log(fullName);
       setOpenCreateSnackError(true);
     } else {
       setOpenCreateSnackSuccess(true);
@@ -157,8 +158,8 @@ function Members() {
 
       CreateNewMember();
 
-      setFirstName("");
-      setLastName("");
+      //setFirstName("");
+      //setLastName("");
       setFullName("");
       setGrade("");
       setMajor("");
@@ -180,8 +181,8 @@ function Members() {
 
     try {
       const newCurrentYear = currentYear;
-      const newFirstName = firstName;
-      const newLastName = lastName;
+      //const newFirstName = firstName;
+      //const newLastName = lastName;
       const newFullName = fullName;
       const newGrade = grade;
       const newMajor = major;
@@ -198,8 +199,8 @@ function Members() {
       await createNewSmithie(
         driver,
         newCurrentYear,
-        newFirstName,
-        newLastName,
+        //newFirstName,
+        //newLastName,
         newFullName,
         newGrade,
         newMajor,
@@ -218,8 +219,8 @@ function Members() {
     async function createNewSmithie(
       driver,
       newCurrentYear,
-      newFirstName,
-      newLastName,
+      //newFirstName,
+      //newLastName,
       newFullName,
       newGrade,
       newMajor,
@@ -233,9 +234,7 @@ function Members() {
 
       try {
         const writeQuery = `MATCH (y:Year {schoolYear: $newCurrentYear})
-              CREATE (p:Person {firstName: $newFirstName, 
-                                lastName: $newLastName, 
-                                fullName: $newFullName,
+              CREATE (p:Person {fullName: $newFullName,
                                 grade: $newGrade,
                                 major: $newMajor,
                                 phone: $newPhone,
@@ -248,8 +247,8 @@ function Members() {
         const writeResult = await session.executeWrite((tx) =>
           tx.run(writeQuery, {
             newCurrentYear,
-            newFirstName,
-            newLastName,
+            //newFirstName,
+            //newLastName,
             newFullName,
             newGrade,
             newMajor,
@@ -618,7 +617,7 @@ function Members() {
               onChange={(e) => setCurrentYear(e.target.value)}
             />
             <br />
-            <TextField
+            {/* <TextField
               fullWidth
               required
               label="First Name: "
@@ -637,7 +636,7 @@ function Members() {
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
             />
-            <br />
+            <br /> */}
             <TextField
               fullWidth
               required
@@ -645,7 +644,7 @@ function Members() {
               variant="filled"
               margin="normal"
               value={fullName}
-              onChange={setFullName(firstName + " " + lastName)}
+              onChange={(e) => setFullName(e.target.value)}
             />
             <br />
             <br />
