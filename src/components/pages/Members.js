@@ -645,7 +645,7 @@ function Members() {
               variant="filled"
               margin="normal"
               value={fullName}
-              onChange={(e) => setFullName(firstName + " " + lastName)}
+              onChange={setFullName(firstName + " " + lastName)}
             />
             <br />
             <br />
