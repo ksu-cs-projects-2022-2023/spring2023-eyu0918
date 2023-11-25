@@ -124,9 +124,9 @@ function Members() {
     }
   };
 
-  const handleSchoolYearChange = (event) => {
-    setSchoolYear(event.target.value);
-  };
+  // const handleSchoolYearChange = (event) => {
+  //   setSchoolYear(event.target.value);
+  // };
 
   const handleCreateNewMember = () => {
     if (
@@ -328,7 +328,7 @@ function Members() {
     return (
       <>
         <h1 className="members">MEMBERS</h1>
-        <div className="members-school-year-dropdown">
+        {/* <div className="members-school-year-dropdown">
           <FormControl>
             <InputLabel id="school-year-select-label">School Year</InputLabel>
             <Select
@@ -343,7 +343,7 @@ function Members() {
               <MenuItem value={"2024-2025"}>2024-2025</MenuItem>
             </Select>
           </FormControl>
-        </div>
+        </div> */}
 
         <h1 className="members-header">
           {schoolYear} Smith Scholarship House Members
@@ -519,7 +519,7 @@ function Members() {
           })}
         </div>
         <img
-          src="images/2022-2023/COMPOSITE.jpg"
+          src={"images/" + schoolYear + "/COMPOSITE.jpg"}
           alt="Composite"
           className="members-composite-picture"
         />
