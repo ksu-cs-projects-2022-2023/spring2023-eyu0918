@@ -80,7 +80,7 @@ function ScheduleAVisit() {
 
   const sendEmail = (e) => {
     emailjs
-      .send("gmail", "schedule_a_visit", visitorInfo, "A_cAZ_h_IxE7dDDVZ")
+      .send("smith_gmail", "schedule_a_visit", visitorInfo, "A_cAZ_h_IxE7dDDVZ")
       .then(
         (result) => {
           console.log(result.text);

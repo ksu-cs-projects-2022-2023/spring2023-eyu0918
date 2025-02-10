@@ -103,7 +103,7 @@ function ApplyToday() {
 
   const sendEmail = (e) => {
     emailjs
-      .send("gmail", "apply_today", applicantInfo, "A_cAZ_h_IxE7dDDVZ")
+      .send("smith_gmail", "apply_today", applicantInfo, "A_cAZ_h_IxE7dDDVZ")
       .then(
         (result) => {
           console.log(result.text);
